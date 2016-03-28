@@ -1,4 +1,4 @@
-package vn.edu.imic.DangChinh;
+package vn.edu.imic.dangchinh;
 
 public class lecture1 {
 
