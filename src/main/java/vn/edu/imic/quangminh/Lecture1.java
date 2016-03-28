@@ -1,4 +1,4 @@
-package vn.edu.imic.quocthinh;
+package vn.edu.imic.quangminh;
 
 public class Lecture1 {
 
