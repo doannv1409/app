@@ -1,4 +1,4 @@
-package vn.edu.imic.LeHaiYen;
+package vn.edu.imic.haiyen;
 
 public class BaiTap1 {
 	public static void main(String[] args) {
