@@ -1,6 +1,6 @@
 package vn.edu.imic.hongtran;
 
-public class Ex01 {
+public class Exer01 {
 	public static void main(String[]args){
 	int a=2;
 	float b=5.6f;
