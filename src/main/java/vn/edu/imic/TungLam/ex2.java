@@ -1,6 +1,6 @@
 package vn.edu.imic.TungLam;
 
-public class vidu {
+public class ex2 {
 	public static void main(String[] args){
 		int a=2;
 		double b=5.6;
