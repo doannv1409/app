@@ -5,8 +5,8 @@ public class vumanh {
 		//print say hello
 		System.out.println(" Say hello.");
 		//khai bao biet kieu
-		int a=1;
-		float b= 12.4f;
+		int a=2;
+		float b=5.6f
 		double c= 12.5;
 		
 		
