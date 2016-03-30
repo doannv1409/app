@@ -26,7 +26,6 @@ public class Lecture1 {
 		 * ++a: tang gia tri a len 1 truoc, sau do 
 		 * 		 moi thuc hien phep toan
 		 */
-		
 		if(a++ == 2) {
 			System.out.println("a==2: true " + a);
 		} else {
