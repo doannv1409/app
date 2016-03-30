@@ -10,4 +10,5 @@ public class Exercise1 {
 		System.out.println("Ket qua cua phep tinh "+S);
 	}
 
+	
 }
