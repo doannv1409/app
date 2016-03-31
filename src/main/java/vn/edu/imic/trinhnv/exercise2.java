@@ -14,7 +14,7 @@ public class exercise2 {
         
         System.out.println("a = " + a);
         System.out.println("b = " + b);
-        System.out.println("c = " + (a + b));
+        System.out.println("c = " + c);
         System.out.println(strString);
         System.out.println("numA = " + numA);
         System.out.println("numB = " + numB);
