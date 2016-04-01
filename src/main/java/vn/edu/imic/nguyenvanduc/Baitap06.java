@@ -16,9 +16,11 @@ public class Baitap06 {
 		int c=sc.nextInt();
 		switch (c) {
 		case 0:
-			for (int i = 0; i < Value; i++)
-				if (i % 2 == 0)
+			for (int i = 0; i < Value; i++) {
+				if (i % 2 == 0) {
 					dem++;
+				}
+			}
 			System.out.println("Số số chắn là "+dem);
 			break;
 		case 1:

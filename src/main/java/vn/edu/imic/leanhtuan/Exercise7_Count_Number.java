@@ -28,7 +28,12 @@ public class Exercise7_Count_Number {
 
 		case (1):
 			System.out.println("Day So Le Nho Hon So Nhap Vao La :");
-			for(i = 1; i < number; i++){
+		int ij=0;
+		while(ij % 2 == 0 && ij <= number) {
+			System.out.println(ij);
+			ij++;
+		}
+		for(i = 1; i < number; i++){
 //				while((i%2) != 0){
 //				System.out.print(i + ",");
 //				i++;

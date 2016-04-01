@@ -17,11 +17,14 @@ public class BTCT1 {
 		if (password.isEmpty()) {
 			System.out.println("Ban chua nhap mat khau");
 		} 
-		if (username == "doannv" && password == "imic.edu.vn") {
+		
+		if (username.equals("doannv") && password.equals("imic.edu.vn")) {
 			System.out.println("Ban da dang nhap thanh cong");
 		} else {
 			System.out.println("Dang nhap khong thanh cong. Vui long kiem tra thong tin dang nhap");
 		}
+		
+		sc.close();
 	}
 
 }

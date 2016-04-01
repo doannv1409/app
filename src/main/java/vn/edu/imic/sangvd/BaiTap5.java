@@ -1,7 +1,5 @@
 package vn.edu.imic.sangvd;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class BaiTap5 {
