@@ -22,7 +22,7 @@ public class Exercise5_Calendar {
 		break;
 		
 		case(2):
-			if((((nam % 4) == 0) || ((nam % 400) == 0)) && ((nam % 100) != 0)){
+			if(((nam % 400) == 0) || (((nam % 4) == 0) && ((nam % 100) != 0))){
 				System.out.println("Nam nhuan nen thang 2 co 29 ngay");
 			}
 			else{

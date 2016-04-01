@@ -66,6 +66,8 @@ public class Exercise3_Calculate {
 		default:
 			System.out.println("Sai O Dau Do Roi");
 		}
+		scan.close();
+		scan1.close();
 	}
 	
 }
