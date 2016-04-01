@@ -53,20 +53,18 @@ public class Exercise5 {
 		if (old < 19) {
 			System.out.print("Khong phep tham gia ket ban");
 		} else {
-			if (gender == 1) {
-				if (old >= 22 && relationship != 1) {
-					System.out.print("Duoc phep tham gia ket ban");
-				} else {
+			if(relationship == 1){
+				System.out.print("Khong phep tham gia ket ban");
+			}
+			else{
+				if (gender == 1 && old < 22){
 					System.out.print("Khong phep tham gia ket ban");
 				}
-			} else {
-				if (relationship != 1) {
+				else{
 					System.out.print("Duoc phep tham gia ket ban");
-				} else {
-					System.out.print("Khong phep tham gia ket ban");
 				}
 			}
-		}
+			 		}
 		scanner.close();
 
 	}

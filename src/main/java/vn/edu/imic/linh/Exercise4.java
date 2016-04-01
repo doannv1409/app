@@ -42,7 +42,6 @@ public class Exercise4 {
 			if(month==2){
 				day = 29;
 			}
-			
 		}
 		else{
 			day =28;
