@@ -38,7 +38,7 @@ public class Exercise4 {
 		if(month==4 || month==6 || month==9 || month==11){
 			day = 30;
 		}
-		if(year%4==0 || year%400==0 && year%100!=0){
+		if((year%4==0  && year%100!=0) || year%400==0 ){
 			if(month==2){
 				day = 29;
 			}
