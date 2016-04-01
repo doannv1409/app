@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Baitap04 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Mời nhập vào năm:");
 		int Nam = sc.nextInt();
