@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Baitap04 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Mời nhập vào năm:");
 		int Nam = sc.nextInt();
@@ -20,12 +19,12 @@ public class Baitap04 {
 		else if (Thang==2)
 		
 		{
-			if(Nam%400==0||Nam%4==0&&Nam%100!=0)
+			if((Nam%400==0||Nam%4==0)&&Nam%100!=0)
 			{
-				System.out.println("Tháng "+Thang+" Năm "+Nam+" có 28 ngày");
+				System.out.println("Tháng "+Thang+" Năm "+Nam+" có 29 ngày");
 			}
 			else
-			System.out.println("Tháng "+Thang+" Năm "+Nam+" có 29 ngày");
+			System.out.println("Tháng "+Thang+" Năm "+Nam+" có 28 ngày");
 		}
 		else
 		{
