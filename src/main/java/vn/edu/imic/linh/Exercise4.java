@@ -3,7 +3,7 @@ package vn.edu.imic.linh;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Excerscise4 {
+public class Exercise4 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		boolean flag = false;
@@ -38,17 +38,17 @@ public class Excerscise4 {
 		if(month==4 || month==6 || month==9 || month==11){
 			day = 30;
 		}
-		if(year%4==0 || year%400==0 && year%100!=0){
+		if((year%4==0  && year%100!=0) || year%400==0 ){
 			if(month==2){
 				day = 29;
 			}
-			else{
-				day =28;
-			}
+		}
+		else{
+			day =28;
 		}
 		
 		System.out.println("Thang "+month+" nam "+year+" co: "+day+" ngay");
-		
+		scanner.close();
 
 	}
 
