@@ -6,19 +6,22 @@ public class baitap2 {
 	public static void main (String[] agrs)
 	{
 		float a,b;
+		int c;
 		Scanner rel = new Scanner (System.in);
 		System.out.println("Nhap a = " );
 		a = rel.nextFloat();
 		System.out.println("nhap b = ");
 		b = rel.nextFloat();
+		System.out.println("chon phep tinh: 1.+,2.-,3.*,4./");
+		c=rel.nextInt();
 		float cong=a+b,tru=a-b,nhan=a*b,chia=a/b;
-		System.out.println("a+b= " +cong);
-		System.out.println("a-b= " +tru);
-		System.out.println("a*b= " +nhan);
-			if(a==0&&b==0)
+		if(c==1){System.out.println("a+b= " +cong);}
+		if(c==2){System.out.println("a-b= " +tru);}
+		if(c==3){System.out.println("a*b= " +nhan);}
+			if(c==4&&a==0&&b==0)
 			{
 				System.out.println("khong co ket qua");
-			}else if(a!=0&&b==0){
+			}else if(c==4&&a!=0&&b==0){
 				System.out.println("Khong chia duoc " );
 			}else {
 				System.out.println("a/b= " +chia);
