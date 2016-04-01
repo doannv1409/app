@@ -1,6 +1,6 @@
 package vn.edu.imic.haiyen;
 
-import java.util.Scanner;
+import java.util.scanner;
 
 public class BTCT1 {
 	public static void main(String[] args) {
@@ -10,6 +10,7 @@ public class BTCT1 {
 		String username = sc.nextLine();
 		System.out.println("Mat khau: ");
 		String password = sc.nextLine();
+		
 		if (username.isEmpty()) {
 			System.out.println("Ban chua nhap ten truy cap");
 		}
