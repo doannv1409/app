@@ -20,12 +20,12 @@ public class Baitap04 {
 		else if (Thang==2)
 		
 		{
-			if(Nam%400==0||Nam%4==0&&Nam%100!=0)
+			if((Nam%400==0||Nam%4==0)&&Nam%100!=0)
 			{
-				System.out.println("Tháng "+Thang+" Năm "+Nam+" có 28 ngày");
+				System.out.println("Tháng "+Thang+" Năm "+Nam+" có 29 ngày");
 			}
 			else
-			System.out.println("Tháng "+Thang+" Năm "+Nam+" có 29 ngày");
+			System.out.println("Tháng "+Thang+" Năm "+Nam+" có 28 ngày");
 		}
 		else
 		{
