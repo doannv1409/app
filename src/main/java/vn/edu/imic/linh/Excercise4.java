@@ -48,7 +48,7 @@ public class Excercise4 {
 		}
 		
 		System.out.println("Thang "+month+" nam "+year+" co: "+day+" ngay");
-		
+		scanner.close();
 
 	}
 

@@ -68,7 +68,7 @@ public class Exercise2 {
 
 			}
 		}
-
+		scanner.close();
 	}
 
 }

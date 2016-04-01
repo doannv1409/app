@@ -20,9 +20,7 @@ public class Exercise3 {
 			}
 		}while(flag==false);
 		
-		
-		
-			
+		scanner.close();	
 		
 	}
 }
