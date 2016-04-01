@@ -3,7 +3,7 @@ package vn.edu.imic.linh;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Excerscise4 {
+public class Excercise4 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		boolean flag = false;
