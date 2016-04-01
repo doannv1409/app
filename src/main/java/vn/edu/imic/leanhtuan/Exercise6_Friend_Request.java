@@ -63,7 +63,10 @@ public class Exercise6_Friend_Request {
 		
 		tuoi = Integer.parseInt(tuoi1);
 		System.out.println("Ket Qua Dang Ky La : ");	
-		if(((tuoi >= 22) && ((gt.equals("Nam")) || gt.equals("nam")) || ((tuoi >= 19) && ((gt.equals("Nu")) || (gt.equals("nu"))))) && ((tthn == 0) || (tthn == 1))){
+		if(((tuoi >= 22) && ((gt.equals("Nam")) || gt.equals("nam")) 
+				|| ((tuoi >= 19) && ((gt.equals("Nu")) 
+						|| (gt.equals("nu"))))) && ((tthn == 0) 
+								|| (tthn == 1))){
 			System.out.println("Duoc Phep Tham Gia");
 		}
 		else 

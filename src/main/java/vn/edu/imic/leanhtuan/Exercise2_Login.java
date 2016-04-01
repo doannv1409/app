@@ -16,7 +16,7 @@ public class Exercise2_Login {
 		String string1 = "doannv";
 		String string2 = "imic.edu.vn";
 		
-		if(username.isEmpty()){
+		if(username == null || username.length() == 0){
 			System.out.println("Bạn chưa nhập tên đăng nhập");
 		}
 		else if(password.isEmpty()){
@@ -27,7 +27,7 @@ public class Exercise2_Login {
 			System.out.println("Bạn chưa nhập mật khẩu");
 			
 		}
-		else if(username.equals(string1) && password.equals(string2)){
+		else if(string1.equals(username) && password.equals(string2)){
 			System.out.println("Bạn Đã Đăng Nhập Thành Công!");
 		} 
 		else{
