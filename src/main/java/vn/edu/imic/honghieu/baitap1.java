@@ -12,14 +12,14 @@ public class baitap1 {
 		user = re.nextLine();
 		if(user.length()==0){
 			System.out.println("Ban can nhap ten truy cap");
-		}else if(user.intern() !="hieukhi"){
+		}else if(user.intern() !="doannv"){
 			System.out.println("Sai id");
 		}
 		System.out.println("Password: " );
 		pass = re.nextLine();
 		if(pass.length()==0){
 			System.out.println("Ban can nhap mat khau");
-		}else if(pass.intern() !="123456"){
+		}else if(pass.intern() !="imic.edu.vn"){
 			System.out.println("Sai pass");
 		}
 	}
