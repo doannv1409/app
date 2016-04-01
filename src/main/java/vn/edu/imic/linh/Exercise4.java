@@ -42,9 +42,10 @@ public class Exercise4 {
 			if(month==2){
 				day = 29;
 			}
-			else{
-				day =28;
-			}
+			
+		}
+		else{
+			day =28;
 		}
 		
 		System.out.println("Thang "+month+" nam "+year+" co: "+day+" ngay");
