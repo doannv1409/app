@@ -15,10 +15,12 @@ public class baitap2 {
 		System.out.println("a+b= " +cong);
 		System.out.println("a-b= " +tru);
 		System.out.println("a*b= " +nhan);
-			if(b==0)
+			if(a==0&&b==0)
 			{
-				System.out.println("khong chia dc");
-			}else{
+				System.out.println("khong co ket qua");
+			}else if(a!=0&&b==0){
+				System.out.println("Khong chia duoc " );
+			}else {
 				System.out.println("a/b= " +chia);
 			}
 	}
