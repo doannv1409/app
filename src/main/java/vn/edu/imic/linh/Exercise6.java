@@ -10,6 +10,7 @@ public class Exercise6 {
 		Scanner scanner = new Scanner(System.in);
 		do{
 			try{
+				System.out.println("Nhap vao so a: ");
 				a = scanner.nextInt();
 				flag= true;
 			}
@@ -26,7 +27,7 @@ public class Exercise6 {
 		int sumOdd=0;
 		while(i<a){
 			if(i%2==0){
-				sumEven +=1;
+				sumEven +=i;
 				countEven++;
 			}
 			else{
@@ -36,8 +37,8 @@ public class Exercise6 {
 			i++;
 		}
 		
-		System.out.println("Day so co "+countEven+"so chan. Tong day so la: "+sumEven);
-		System.out.println("Day so co "+countOdd+"so chan. Tong day so la: "+sumOdd);
+		System.out.println("Day so co "+countEven+" so chan. Tong day so chan la: "+sumEven);
+		System.out.println("Day so co "+countOdd+" so le. Tong day so le la: "+sumOdd);
 
 	}
 }
