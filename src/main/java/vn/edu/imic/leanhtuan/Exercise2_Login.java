@@ -4,13 +4,14 @@ import java.util.Scanner;
 
 public class Exercise2_Login {
 	public static void main(String [] args){
-		Scanner scan = new Scanner(System.in);
 		
 		System.out.println("UserName : ");
+		Scanner scan = new Scanner(System.in);
 		String username = scan.nextLine();
 		
 		System.out.println("PassWord : ");
-		String password = scan.nextLine();
+		Scanner scan1 = new Scanner(System.in);
+		String password = scan1.nextLine();
 		
 		String string1 = "doannv";
 		String string2 = "imic.edu.vn";
@@ -32,5 +33,8 @@ public class Exercise2_Login {
 		else{
 			System.out.println("Đăng nhập không thành công. Vui lòng kiểm tra lại thông tin đăng nhập");
 		}
+		scan.close();
+		scan1.close();
 	}
+	
 }
