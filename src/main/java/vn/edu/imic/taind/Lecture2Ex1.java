@@ -27,5 +27,6 @@ public class Lecture2Ex1 {
 			strTenDangNhap="";
 			strMatKhau="";
 		}while(!strTenDangNhap.equals("taind")&& !strMatKhau.equals("1982376450"));
+		scanner.close();
 	}
 }
