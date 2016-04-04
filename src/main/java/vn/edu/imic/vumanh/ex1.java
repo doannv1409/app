@@ -18,7 +18,7 @@ public class ex1 {
 				if(PassWord.isEmpty()){
 					System.out.println("Ban chua nhap mat khau");
 				}
-				if(Usename="doannv" && PassWord="imic.edu.vn"){
+				if(Usename.equals("doannv") && PassWord.equals("imic.edu.vn")){
 					System.out.println("Ban da dang nhap thanh cong");
 				}
 				else{
