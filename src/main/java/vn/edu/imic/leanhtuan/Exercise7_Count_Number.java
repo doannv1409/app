@@ -39,6 +39,7 @@ public class Exercise7_Count_Number {
 		default:
 			System.out.println("Sai Cho Nao Do Roi!");
 		}
+		
 		scan.close();
 		scan1.close();
 	}
