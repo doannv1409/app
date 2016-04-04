@@ -25,7 +25,8 @@ public class ExCouple {
         box = scan.nextLine();
         if(box.isEmpty()){
             System.out.print("chon tinh trang hon nhan di!");
-            return;
+//hello
+
         }
         byte tinhtranghn = Byte.parseByte(box);
         

@@ -4,33 +4,27 @@ import java.util.Scanner;
 
 public class exercise5 {
 	public static void main(String[] args) {
+		System.out.println("Nhap so: ");
 		Scanner sc = new Scanner(System.in);
-		try {
-			System.out.print("Enter a: ");
-			float a = sc.nextFloat();
-			System.out.print("Enter b: ");
-			float b = sc.nextFloat();
-			System.out.print("Choice: 0(+) 1(-) 2(*) 3(/): ");
-			int choice = sc.nextInt();
-
-			switch (choice) {
-			case 0:
-				System.out.println("a + b = " + (a + b));
-				break;
-			case 1:
-				System.out.println("a - b = " + (a - b));
-				break;
-			case 2:
-				System.out.println("a * b = " + (a * b));
-				break;
-			case 3:
-				System.out.println("a / b = " + (a / b));
-				break;
-			default:
-				System.err.println("Invalid option selected");
+		int a = sc.nextInt();
+		System.out.println("Chon kieu: Chan-0, Le-1");
+		int kieu = sc.nextInt();
+		StringBuilder odd = new StringBuilder("Cac so le: ");
+		StringBuilder even = new StringBuilder("Cac so chan: ");
+		for (int i = 0; i <= a; i++) {
+			if(i % 2 == 0) {
+				even.append(i).append(" ");
+			} else {
+				odd.append(i).append(" ");
 			}
-		} finally {
-			sc.close();
 		}
+		
+		if(kieu == 0) {
+			System.out.println(even.toString());
+		} else {
+			System.out.println(odd.toString());
+		}
+		
+		sc.close();
 	}
 }

@@ -9,7 +9,7 @@ public class Lecture2 {
 		if (2 > 1) {
 			System.out.println("2 lon hon 1");
 		}
-
+		//Comment ...
 		int a = 2;
 		int b = 3;
 		if (a >= b) {

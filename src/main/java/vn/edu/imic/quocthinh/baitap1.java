@@ -5,7 +5,10 @@ import java.util.Scanner;
 public class baitap1 {
 	public static void main(String[] agrs) {
 		String user, password;
-		Scanner sc = new Scanner(System.in);
+		int a,b;
+		Scanner sc = new Scanner(System.in);//comment........
+		
+		
 		System.out.println("Nhap username: ");
 		user = sc.nextLine();
 
