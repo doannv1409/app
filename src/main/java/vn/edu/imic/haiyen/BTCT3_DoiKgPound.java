@@ -2,7 +2,7 @@ package vn.edu.imic.haiyen;
 
 import java.util.Scanner;
 
-public class BTCT3 {
+public class BTCT3_DoiKgPound {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Input a Kilogram:");
