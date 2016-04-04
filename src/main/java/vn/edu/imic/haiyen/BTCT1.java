@@ -1,6 +1,6 @@
 package vn.edu.imic.haiyen;
 
-import java.util.scanner;
+import java.util.Scanner;
 
 public class BTCT1 {
 	public static void main(String[] args) {

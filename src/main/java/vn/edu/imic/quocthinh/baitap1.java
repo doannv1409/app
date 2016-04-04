@@ -5,7 +5,10 @@ import java.util.Scanner;
 public class baitap1 {
 	public static void main(String[] agrs) {
 		String user, password;
-		Scanner sc = new Scanner(System.in);
+		int a,b;
+		Scanner sc = new Scanner(System.in);//comment........
+		
+		
 		System.out.println("Nhap username: ");
 		user = sc.nextLine();
 
@@ -19,7 +22,7 @@ public class baitap1 {
 		password = sc.nextLine();
 		if (password.length() == 0) {
 			System.out.println("chua nhap password");
-		} else if (password.intern() != "1111") {
+		} else if (password.intern() != "1111111") {
 			System.out.println("sai password ");
 			System.out.println("dang nhap that bai ");
 		}

@@ -33,7 +33,7 @@ public class BTCT5 {
 
 		System.out.println("KET QUA:");
 
-		if (tuoi < 19) {
+		if (tuoi <= 19) {
 			System.out.println("Khong duoc tham gia");
 		} else if (gioitinh.equals("Nam") && tuoi >= 22
 				&& (tinhtrang.equals("chua co gia dinh") || tinhtrang.equals("ly hon"))) {
