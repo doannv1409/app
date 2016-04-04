@@ -24,8 +24,6 @@ public class Lecture2Ex1 {
 					System.out.println("Dang nhap khong thanh cong. Vui long kiem tra lai thong tin dang nhap!");
 				}
 			}
-			strTenDangNhap="";
-			strMatKhau="";
-		}while(!strTenDangNhap.equals("taind")&& !strMatKhau.equals("1982376450"));
+		}while(true);
 	}
 }

@@ -6,10 +6,7 @@ public class Exercise3_Calculate {
 	public static void main(String [] args){
 		
 		Scanner scan = new Scanner(System.in);
-		float tong = 0;
-		float hieu = 0;
-		float tich = 0;
-		float thuong = 0;
+		
 		
 		float a = 0 ;
 		float b	= 0;
@@ -40,19 +37,19 @@ public class Exercise3_Calculate {
 		switch(loai){
 			
 		case(0):
-			tong = a + b;
-		System.out.println("Ket qua la :" + tong);
+		
+		System.out.println("Ket qua la :" + (a+b));
 		break;
 		case(1):
-			hieu = a - b;
-		System.out.println("Ket qua la :" + hieu);
+		
+		System.out.println("Ket qua la :" + (a-b));
 		break;
 		case(2):
-			tich = a * b;
-		System.out.println("Ket qua la :" + tich);
+			
+		System.out.println("Ket qua la :" + (a*b));
 		break;
 		case(3):
-			thuong = a / b;
+		
 		if(a != 0 && b == 0){
 			System.out.println("Cannot divide by zero");
 		}
@@ -60,7 +57,7 @@ public class Exercise3_Calculate {
 			System.out.println("Result of function is underfined");
 		}
 		else{
-		System.out.println("Ket qua la :" + thuong);
+		System.out.println("Ket qua la :" + (a/b));
 		}
 		break;
 		default:

@@ -2,7 +2,7 @@ package vn.edu.imic.haiyen;
 
 import java.util.Scanner;
 
-public class BTCT2 {
+public class BTCT2_TinhToan {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
@@ -11,18 +11,18 @@ public class BTCT2 {
 		System.out.println("Nhap vao so b: ");
 		String sob = sc.nextLine();
 
-		float a = 0, b = 0;
+		int a = 0, b = 0;
 
 		if (soa.isEmpty()) {
 			System.out.println("Chua nhap a");
 		} else {
-			a = Float.parseFloat(soa);
+			a = Integer.parseInt(soa);
 		}
 
 		if (sob.isEmpty()) {
 			System.out.println("Chua nhap b");
 		} else {
-			b = Float.parseFloat(sob);
+			b = Integer.parseInt(sob);
 		}
 		System.out.println("Chon phep toan: +, -, x, / ");
 		String tinh = sc.nextLine();
@@ -31,7 +31,10 @@ public class BTCT2 {
 			System.out.println("Chua chon phep toan");
 		}
 		if (tinh.equals("+")) {
-			System.out.println("a + b = " + (a + b));
+			System.out.println("a + b = " + (a + b));//neu khong co ngoac( a+b)thi se ra a, b
+			//neu de a+b+" " thi se ra ket qua a+b
+			//uu tien xet kieu cua cach nhau dau + truoc, vi du string + string thi mac dinh toan bo phia sau deu String
+			//neu de 2 int gan nhau thi cong lai truoc
 		} else if (tinh.equals("-")) {
 			System.out.println("a - b = " + (a - b));
 		} else if (tinh.equals("x")) {
@@ -42,9 +45,13 @@ public class BTCT2 {
 			} else if (a == 0 && b == 0) {
 				System.out.println("Result of function is underfined");
 			} else {
-				System.out.println("a / b = " + (float) (a / b));
+				System.out.println("a / b = " + (float) a / b);
 			}
 
 		}
 	}
 }
+//neu a, b la int thi ket qua la
+//thuc hien trong ngoac truoc (float)a/b
+//neu dung float(a/b) thi ket qua la int
+//parse thi phai chuyen qua kieu so, neu nhap string thi bi loi
