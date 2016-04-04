@@ -43,6 +43,6 @@ public class Lecture2Ex2 {
 		default: System.out.println("Chon sai phep tinh roi, chay lai di");
 			break;
 		}
-		
+		scanner.close();
 	}
 }
