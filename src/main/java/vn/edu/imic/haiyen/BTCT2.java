@@ -16,7 +16,7 @@ public class BTCT2 {
 		if (soa.isEmpty()) {
 			System.out.println("Chua nhap a");
 		} else {
-			a = Float.parseFloat(soa);
+			a = Float.parseFloat(soa);// chuyen string ve float
 		}
 
 		if (sob.isEmpty()) {
