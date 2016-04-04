@@ -1,3 +1,4 @@
+package vn.edu.imic.vumanh;
 import java.util.Scanner;
 
 public class ex2 {
@@ -42,6 +43,5 @@ public class ex2 {
 		} else if (a == 0 && b == 0) {
 			System.out.println("Result of function is underfined");
 		}
-soa.
 	}
 }
