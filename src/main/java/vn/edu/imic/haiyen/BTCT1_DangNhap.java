@@ -10,6 +10,7 @@ public class BTCT1_DangNhap {
 		String username = sc.nextLine();
 		System.out.println("Mat khau: ");
 		String password = sc.nextLine();
+		
 		if (username.isEmpty()) {
 			System.out.println("Ban chua nhap ten truy cap");
 		}
@@ -21,6 +22,8 @@ public class BTCT1_DangNhap {
 		} else {
 			System.out.println("Dang nhap khong thanh cong. Vui long kiem tra thong tin dang nhap");
 		}
+		
+		sc.close();
 	}
 //doc Scanner khac voi String username2 nen ko so sanh == duoc
 //la object khac nhau

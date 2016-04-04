@@ -1,10 +1,11 @@
 package vn.edu.imic.trinhnv;
 
 public class exercise1 {
-	public static void main(String[] args) {
-		int a = 2;
-		double b = 5.6;
-		double c = Math.sqrt(a)*Math.pow(b, 2) + 4*a*Math.sqrt(b);
-		System.out.println("Sum of a and b = " + c);
-	}
+    public static void main(String[] args) {
+        System.out.println("iMicrosoft - day kinh nghiem lap trinh- do hoa da phuong tien"
+                + " bao mat he thong thong tin");
+        System.out.println("Chao mung den voi lop hoc java for base tai iMicrosoft");
+        System.out.println("Day la vi du ve print don gian trong thu vien");
+        System.out.println("");
+    }	
 }
