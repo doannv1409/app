@@ -1,7 +1,5 @@
 package vn.edu.imic.haiyen;
 
-import java.util.Scanner;
-
 public class BTCT5_CapDoi {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -33,6 +31,7 @@ public class BTCT5_CapDoi {
 
 		System.out.println("KET QUA:");
 
+<<<<<<< Updated upstream:src/main/java/vn/edu/imic/haiyen/BTCT5_CapDoi.java
 //		if (tuoi < 19 || tinhtrang.equals("da co gia dinh") || (gioitinh.equals("nam") && tuoi < 22)) {
 //			System.out.println("ko dc phep");
 //		} else {
@@ -49,6 +48,16 @@ public class BTCT5_CapDoi {
 		 } else{
 			 System.out.println("ko duoc phep");
 		 }
+=======
+		if (tuoi <= 19) {
+			System.out.println("Khong duoc tham gia");
+		} else if (gioitinh.equals("Nam") && tuoi >= 22
+				&& (tinhtrang.equals("chua co gia dinh") || tinhtrang.equals("ly hon"))) {
+			System.out.println("Duoc phep tham gia");
+		} else if (gioitinh.equals("Nu") && (tinhtrang.equals("chua co gia dinh") || tinhtrang.equals("ly hon"))) {
+			System.out.println("Duoc phep tham gia");
+		}
+>>>>>>> Stashed changes:src/main/java/vn/edu/imic/haiyen/BTCT5.java
 	}
 
 }
