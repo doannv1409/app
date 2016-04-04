@@ -25,7 +25,7 @@ public class exercise1 {
     	
     	System.out.println("Vui long chon phep tinh 0(+), 1(-), 2(*), 3(/): ");
        	String choice = sc.nextLine();
-    	if (choice == "" && choice.isEmpty() ) {
+    	if (choice == "" || choice.isEmpty() ) {
 			System.out.println("Ban chua chon phep toan !");
 		}
     	switch (choice) {
@@ -45,11 +45,8 @@ public class exercise1 {
 					System.out.println("Result of function is underfined");
 				}
 			System.out.println("a / b = " + (A / B));
-			break;
-		default:
-			System.err.println("Invalid option selected");
+			break;	
     	}
-    	
     	sc.close();
     }
 }
