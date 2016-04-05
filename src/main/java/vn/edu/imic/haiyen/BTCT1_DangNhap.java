@@ -1,8 +1,8 @@
 package vn.edu.imic.haiyen;
 
-import java.util.scanner;
+import java.util.Scanner;
 
-public class BTCT1 {
+public class BTCT1_DangNhap {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Nhap thong tin dang nhap");
@@ -17,7 +17,6 @@ public class BTCT1 {
 		if (password.isEmpty()) {
 			System.out.println("Ban chua nhap mat khau");
 		} 
-		
 		if (username.equals("doannv") && password.equals("imic.edu.vn")) {
 			System.out.println("Ban da dang nhap thanh cong");
 		} else {
@@ -26,5 +25,8 @@ public class BTCT1 {
 		
 		sc.close();
 	}
-
+//doc Scanner khac voi String username2 nen ko so sanh == duoc
+//la object khac nhau
+// dung equals de so sanh
+//so sanh a.intern() != "doannv"
 }

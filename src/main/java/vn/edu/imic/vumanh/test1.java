@@ -1,3 +1,4 @@
+package vn.edu.imic.vumanh;
 import java.util.Scanner;
 
 public class test1 {
