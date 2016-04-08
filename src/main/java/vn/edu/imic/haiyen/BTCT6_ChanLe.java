@@ -11,7 +11,7 @@ public class BTCT6_ChanLe {
 		int kieu = sc.nextInt();
 
 		StringBuilder odd = new StringBuilder("Cac so le: ");
-		StringBuilder even = new StringBuilder("Cac so le");
+		StringBuilder even = new StringBuilder("Cac so chan");
 		for (int i = 0; i <= a; i++) {
 			if (a % 2 == 0) {
 				even.append(i).append(" ");
