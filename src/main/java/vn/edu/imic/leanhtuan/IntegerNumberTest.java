@@ -13,4 +13,5 @@ public class IntegerNumberTest {
 			return number;
 			
 		}
+		//Chua implement ham tinh tong
 }
