@@ -30,5 +30,7 @@ public class BTF5_CapDoi {
 	public static boolean check(int tuoiInt, String gioitinh, String tinhtrang){
 		return !(tuoiInt < 19 || tinhtrang.equals("da co gia dinh") || (gioitinh.equals("nam") && tuoiInt < 22));
 	}
+	
+	
 
 }
