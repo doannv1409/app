@@ -1,6 +1,8 @@
 package vn.edu.imic.taind;
 
 public class IntegerNumber {
+	//Viet lai lop doi tuong chi chua 1 gia tri 
+	//int la thuoc tinh 
 	private int number;
 	private int number2;
 

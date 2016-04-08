@@ -6,6 +6,8 @@ public class IntegerNumber {
 	public IntegerNumber(int value){
 		this.value=value;
 	}
+	
+	//nen de ve public hoac remove neu ko can
 	private void setValue(int value) {
 		this.value = value;
 
