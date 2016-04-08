@@ -15,8 +15,6 @@ public class ExTinhtoan {
         }
        
             a = Double.parseDouble(box);
-     
-            
         System.out.print("+ b = ");
         box = scan.nextLine();
         if(box.isEmpty()){
