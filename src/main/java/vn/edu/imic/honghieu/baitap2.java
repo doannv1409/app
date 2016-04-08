@@ -14,17 +14,13 @@ public class baitap2 {
 		b = rel.nextFloat();
 		System.out.println("chon phep tinh: 1.+,2.-,3.*,4./");
 		c=rel.nextInt();
-		float cong=a+b,tru=a-b,nhan=a*b,chia=a/b;
+		float cong=a+b,tru=a-b,nhan=a*b;
 		if(c==1){System.out.println("a+b= " +cong);}
 		if(c==2){System.out.println("a-b= " +tru);}
 		if(c==3){System.out.println("a*b= " +nhan);}
-			if(c==4&&a==0&&b==0)
-			{
-				System.out.println("khong co ket qua");
-			}else if(c==4&&a!=0&&b==0){
-				System.out.println("Khong chia duoc " );
-			}else {
-				System.out.println("a/b= " +chia);
-			}
+		if(c==4){
+			System.out.println( "a/b= "+(a/b));
+			
+		}
 	}
 }
