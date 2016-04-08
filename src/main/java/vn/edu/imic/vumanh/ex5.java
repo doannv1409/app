@@ -10,6 +10,7 @@ public class ex5 {
 		String sotuoi = sc.nextLine();
 		System.out.println("tinh trang hon nhan:chua co gia dinh,ly hon,da ket hon ");
 		String tinhtrang = sc.nextLine();
+		
 		System.out.println("gioi tinh: nam,nu");
 		String gt = sc.nextLine();
 
