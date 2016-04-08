@@ -2,10 +2,7 @@ package vn.edu.imic.trinhnv;
 
 public class IntegerNumber {
 	private int value;
-	
-	public IntegerNumber(){
-		
-	}
+
 	public int getValue() {
 		return value;
 	}

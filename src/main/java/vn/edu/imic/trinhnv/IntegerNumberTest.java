@@ -6,10 +6,10 @@ public class IntegerNumberTest {
 	IntegerNumber n2 = new IntegerNumber();
 	n1.setValue(2);
 	n2.setValue(3);
-	
+
 	}
 	public static int sum (IntegerNumber n1, IntegerNumber n2){
-		
+		return
 	}
 }
 
