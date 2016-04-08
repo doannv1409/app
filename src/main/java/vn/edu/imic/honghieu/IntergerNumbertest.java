@@ -6,6 +6,6 @@ public class IntergerNumbertest {
 		IntergerNumber number2 = new IntergerNumber(3);
 		}
 	private static void sum (IntergerNumber number){
-		
+		System.out.println();
 		}
 }
