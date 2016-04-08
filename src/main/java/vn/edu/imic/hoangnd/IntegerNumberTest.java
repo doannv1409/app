@@ -8,7 +8,7 @@ public class IntegerNumberTest {
 //			num2.va
 //			return (num1+num2);
 //		}
-		public static IntegerNumber sum(IntegerNumber num1, IntegerNumber num2){
+		public void sum(IntegerNumber num1, IntegerNumber num2){
 			return num1+num2;
 		}
 		IntegerNumber number1 = new IntegerNumber();
