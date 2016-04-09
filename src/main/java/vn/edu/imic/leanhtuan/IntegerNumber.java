@@ -8,12 +8,12 @@ public class IntegerNumber {
 	}
 	
 	//nen de la setValue
-	public void setIntegerNumber(int value){
+	public void setValue(int value){
 		this.value = value;
 	}
 	
 	//nen de getValue ko co params
-	public int getIntegerNumber(int value){
+	public int getValue(){
 		return this.value;
 		
 	}
