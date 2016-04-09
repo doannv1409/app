@@ -11,6 +11,7 @@ public class exercise1 {
     	String a = sc.nextLine();
     	if (a == "" || a.isEmpty()) {
 			System.out.println("Ban chua nhap a !");
+			return;
 		}else {
 			A = Float.parseFloat(a);
 		}
@@ -19,6 +20,7 @@ public class exercise1 {
     	String b = sc.nextLine();
     	if (b == "" || b.isEmpty()) {
 			System.out.println("Ban chua nhap b !");
+			return;
 		}else {
 			B = Float.parseFloat(b);
 		}
