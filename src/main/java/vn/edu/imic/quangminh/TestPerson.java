@@ -22,9 +22,9 @@ public class TestPerson {
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		p.setDob(new Date());
 		
 		//format kieu Date -> String dang dd/MM/yyyy
+		p.setDob(new Date());
 		String dobStr = format.format(p.getDob());
 		
 		System.out.println(dobStr);
