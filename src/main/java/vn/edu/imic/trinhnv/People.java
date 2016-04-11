@@ -112,7 +112,7 @@ class ShowPeople{
 	    private static void print(People people){
 	        System.out.println("--------------" + people.getId() +"-----------------");
 	        System.out.println("+Ho va ten:" + people.getFullName());
-	        System.out.println("+So chan:" + people.getLeg() + "- So tay:" + people.getArm() +
+	        System.out.println("+So chan:" + people.getLeg() + " - So tay:" + people.getArm() +
 	                " - Mau toc:"+ people.getHairColor());
 	        System.out.println("+Ngon ngu:" + people.getLanguage());
 	        System.out.println("+Gioi tinh:" + people.getGender());
