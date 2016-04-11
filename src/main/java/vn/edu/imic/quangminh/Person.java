@@ -1,5 +1,7 @@
 package vn.edu.imic.quangminh;
 
+import java.util.Date;
+
 public class Person {
 	private int id;
 	private String fullName;
@@ -8,6 +10,8 @@ public class Person {
 	private String hairColor;
 	private String language;
 	private String gender;
+	private Date dob;
+	
 	
 	public Person(int id, String fullName) {
 		this.id = id;
@@ -81,6 +85,14 @@ public class Person {
 		//C2. Dung String format
 		String info = "id: %s \n Ho va ten: %s\n So chan: %s - So tay: %s\n Ngon ngu: %s\n Gioi tinh: %s";
 		return String.format(info, id, fullName, legs, hands, language, gender);
+	}
+
+	public Date getDob() {
+		return dob;
+	}
+
+	public void setDob(Date dob) {
+		this.dob = dob;
 	}
 
 }
