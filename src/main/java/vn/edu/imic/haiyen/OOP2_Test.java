@@ -28,7 +28,7 @@ public class OOP2_Test {
 		OOP2_People p4 = new OOP2_People(4, "J.Brave", 2, 2, "Do", "ENG", "Nam");
 		p4.setMautoc("Vang");
 		p4.setNgonngu("ENG, VNI");
-		
+
 		displayInfor(p1);
 		displayInfor(p2);
 		displayInfor(p3);
