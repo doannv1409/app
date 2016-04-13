@@ -22,8 +22,8 @@ public class Person_Inheritance {
 	}
 
 	public Date getBirthday() {
-		// TODO Auto-generated method stub
-		return null;
+
+		return this.birthday;
 	}
 
 	public String getName() {
