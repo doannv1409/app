@@ -3,10 +3,14 @@ package vn.edu.imic.tunglam;
 public class IntegerNumber{
 
 
-private int value;
+public int value;
+
+public IntegerNumber(){
+	
+}
+
 public IntegerNumber(int value){
 	this.value = value;
 }
-
 
 }

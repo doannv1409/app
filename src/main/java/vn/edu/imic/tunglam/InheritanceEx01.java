@@ -9,24 +9,15 @@ public class InheritanceEx01 {
 		System.out.print(0 + ". ToyotaiQ01");
 		System.out.println("    "+ 1 + ". ToyotaiQ02");
 		int so = sc.nextInt();
-		
+		Toyota_iQ toyota1 = new Toyota_iQ();
+		Toyota_iQ toyota2 = new Toyota_iQ();
 		if (so == 0) {
-			ToyotaiQ01();
+			toyota1.ToyotaiQ01();
 			
 		}
 		if (so == 1) {
-			ToyotaiQ02();
+			toyota2.ToyotaiQ02();
 		}
 		sc.close();
-	}
-
-	private static void ToyotaiQ02() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private static void ToyotaiQ01() {
-		// TODO Auto-generated method stub
-		
 	}
 }
