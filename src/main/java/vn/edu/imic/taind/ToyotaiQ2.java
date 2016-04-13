@@ -17,7 +17,7 @@ public class ToyotaiQ2 extends ToyotaiQ{
 		.append("+ ").append(cangat).append("\n")
 		.append("+ ").append(xylanh).append("\n")
 		.append("+ ").append(nhienlieu).append("\n")
-		.append("+ ").append(khithai).append("\n")
+		.append("+ ").append(khithai).append("\n") 
 		.append("------------------------------").append("\n")
 		.append("2 - Phu kien rieng cho dong xe nay:").append("\n")
 		.append("+ ").append(guong).append("\n")

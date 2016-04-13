@@ -17,7 +17,7 @@ public class ToyotaiQ {
 		this.xylanh = xylanh;
 		this.nhienlieu = nhienlieu;
 		this.khithai = khithai;
-		this.dieuhoa = dieuhoa;
+		this.dieuhoa = dieuhoa; 
 	}
 	
 	public ToyotaiQ(){
