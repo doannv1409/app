@@ -17,7 +17,7 @@ public class TestPerson {
 		try {
 			//Convert tu String date co dang dd/MM/yyyy
 			//Thanh kieu java.util.Date
-			dob = format.parse("08/03/2016");
+			dob = format.parse("09/03/2014");
 			System.out.println(dob);
 		} catch (ParseException e) {
 			e.printStackTrace();

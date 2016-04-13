@@ -3,9 +3,15 @@ package vn.edu.imic.leanhtuan;
 import java.util.Date;
 
 public class Person_Inheritance {
+	
 	protected String name;
 	protected Date birthday;
 	
+	
+	public Person_Inheritance(String name, Date birthday){
+		this.name = name;
+		this.birthday = birthday;
+	}
 	
 	public void setBirthday(Date birthday) {
 		this.birthday = birthday;
@@ -22,8 +28,8 @@ public class Person_Inheritance {
 	}
 
 	public Date getBirthday() {
-		// TODO Auto-generated method stub
-		return null;
+
+		return this.birthday;
 	}
 
 	public String getName() {

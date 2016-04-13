@@ -13,7 +13,15 @@ public class Toyota_iQ {
 			protected String denSuongMu;
 			
 			public Toyota_iQ(String vanhDuc, String denPha,String denSuongMu, String canGatNuoc, String xyLanh, String tieuThuNhienLieu, String nongDoKhiThai, String dieuHoaNhietDo, String guong, String loSuoi){
-				
+				this.vanhDuc = vanhDuc;
+				this.canGatNuoc = canGatNuoc;
+				this.tieuThuNhienLieu = tieuThuNhienLieu;
+				this.denPha = denPha;
+				this.nongDoKhiThai = nongDoKhiThai;
+				this.dieuHoaNhietDo = dieuHoaNhietDo;
+				this.guong = guong;
+				this.loSuoi = loSuoi;
+				this.denSuongMu = denSuongMu;
 			}
 			
 			public String getGuong() {
@@ -78,6 +86,11 @@ public class Toyota_iQ {
 			}
 			
 			public void inThongSo(){
-				System.out.println(vanhDuc + denPha + canGatNuoc + xyLanh + tieuThuNhienLieu + nongDoKhiThai + dieuHoaNhietDo + guong + loSuoi);
-			}
+				System.out.println("+ Vanh Duc Hop Kim : "+ vanhDuc);
+				System.out.println("+ Den Pha : "+ denPha);
+				System.out.println("+ Can Gat Nuoc : "+ canGatNuoc);
+				System.out.println("+ Xy lanh VVT dung tich : "+ xyLanh);
+				System.out.println("+ Tieu Thu Nhien Lieu : "+ tieuThuNhienLieu);
+				System.out.println("+ Nong Do Khi Thai : "+ nongDoKhiThai);
+				System.out.println("+ Dieu Hoa Nhiet Do : "+ dieuHoaNhietDo);	}
 }
