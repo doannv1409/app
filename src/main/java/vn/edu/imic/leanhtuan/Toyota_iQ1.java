@@ -5,15 +5,7 @@ public class Toyota_iQ1 extends Toyota_iQ{
 
 			public Toyota_iQ1(String vanhDuc, String denPha,String denSuongMu, String canGatNuoc, String xyLanh, String tieuThuNhienLieu, String nongDoKhiThai, String dieuHoaNhietDo, String guong, String loSuoi){
 				super(vanhDuc,canGatNuoc,tieuThuNhienLieu,denPha,denSuongMu,xyLanh, nongDoKhiThai, dieuHoaNhietDo, guong, loSuoi);
-				this.vanhDuc = vanhDuc;
-				this.canGatNuoc = canGatNuoc;
-				this.tieuThuNhienLieu = tieuThuNhienLieu;
-				this.denPha = denPha;
-				this.nongDoKhiThai = nongDoKhiThai;
-				this.dieuHoaNhietDo = dieuHoaNhietDo;
-				this.guong = guong;
-				this.loSuoi = loSuoi;
-				this.denSuongMu = denSuongMu;
+				
 			}
 			
 			
@@ -26,7 +18,10 @@ public class Toyota_iQ1 extends Toyota_iQ{
 			
 			@Override
 			public void inThongSo(){
-				System.out.println(vanhDuc + denPha + denSuongMu + canGatNuoc + xyLanh + tieuThuNhienLieu + nongDoKhiThai + dieuHoaNhietDo + guong + loSuoi + amThanh6Loa);
-			}
+				super.inThongSo();
+				System.out.println("+ Guong Co : "+ guong);
+				System.out.println("+ " + loSuoi);
+				System.out.println("+ " + amThanh6Loa);
+				}
 				
 }
