@@ -13,7 +13,15 @@ public class Toyota_iQ {
 			protected String denSuongMu;
 			
 			public Toyota_iQ(String vanhDuc, String denPha,String denSuongMu, String canGatNuoc, String xyLanh, String tieuThuNhienLieu, String nongDoKhiThai, String dieuHoaNhietDo, String guong, String loSuoi){
-				
+				this.vanhDuc = vanhDuc;
+				this.canGatNuoc = canGatNuoc;
+				this.tieuThuNhienLieu = tieuThuNhienLieu;
+				this.denPha = denPha;
+				this.nongDoKhiThai = nongDoKhiThai;
+				this.dieuHoaNhietDo = dieuHoaNhietDo;
+				this.guong = guong;
+				this.loSuoi = loSuoi;
+				this.denSuongMu = denSuongMu;
 			}
 			
 			public String getGuong() {
