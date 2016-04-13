@@ -15,7 +15,6 @@ public class Cat extends Animal {
 		super.sayHello();
 		System.out.println("Meooo...");
 	}
-	
 	public static void main(String[] args) {
 		Animal animal1 = new Animal("Animal1");
 		animal1.sayHello();
