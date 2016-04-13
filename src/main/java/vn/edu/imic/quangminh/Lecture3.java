@@ -49,6 +49,9 @@ public class Lecture3 {
 	}
 	
 	private static boolean checkLogin(String username, String password) {
+		
+		
+		
 		return "imic".equals(username) && "123456".equals(password);
 	}
 
