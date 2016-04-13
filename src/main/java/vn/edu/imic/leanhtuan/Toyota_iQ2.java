@@ -21,7 +21,13 @@ public class Toyota_iQ2  extends Toyota_iQ{
 		
 		@Override
 		public void inThongSo(){
-			System.out.println(vanhDuc + denPha + canGatNuoc + xyLanh + tieuThuNhienLieu + nongDoKhiThai + dieuHoaNhietDo + guong + loSuoi + chiaKhoa);
+			
+			super.inThongSo();
+			System.out.println("+ Guong Co : "+ guong);
+			System.out.println("+ " + loSuoi);
+			System.out.println("+ He Thong " + chiaKhoa);
+			
+			         
 		}
 		
 		

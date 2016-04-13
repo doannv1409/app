@@ -86,6 +86,11 @@ public class Toyota_iQ {
 			}
 			
 			public void inThongSo(){
-				System.out.println(vanhDuc + denPha + canGatNuoc + xyLanh + tieuThuNhienLieu + nongDoKhiThai + dieuHoaNhietDo + guong + loSuoi);
-			}
+				System.out.println("+ Vanh Duc Hop Kim : "+ vanhDuc);
+				System.out.println("+ Den Pha : "+ denPha);
+				System.out.println("+ Can Gat Nuoc : "+ canGatNuoc);
+				System.out.println("+ Xy lanh VVT dung tich : "+ xyLanh);
+				System.out.println("+ Tieu Thu Nhien Lieu : "+ tieuThuNhienLieu);
+				System.out.println("+ Nong Do Khi Thai : "+ nongDoKhiThai);
+				System.out.println("+ Dieu Hoa Nhiet Do : "+ dieuHoaNhietDo);	}
 }
