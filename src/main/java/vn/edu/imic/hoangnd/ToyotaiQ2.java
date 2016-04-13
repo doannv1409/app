@@ -14,7 +14,7 @@ public class ToyotaiQ2 extends Toyota{
 	public static void main(String[] args) {
 		ToyotaiQ2 iQ2 = new ToyotaiQ2();
 		//System.out.println(iQ2.dieuHoa);
-		System.out.println(iQ2.toString());
+		System.out.println(iQ2);
 	}
 
 	@Override

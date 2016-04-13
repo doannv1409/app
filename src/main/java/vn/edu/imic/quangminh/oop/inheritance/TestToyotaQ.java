@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class TestToyotaQ {
 	public static void main(String[] args) {
-		ToyotaQ1 q1 = new ToyotaQ1("Gương đi�?u khiển điện và có sưởi", 
-				"Âm thanh 6 loa", "�?èn sương mù");
-		ToyotaQ2 q2 = new ToyotaQ2("Gương đi�?u khiển điện và có sưởi", 
-				"�?èn sương mù", "Hệ thống chìa khóa thông minh");
+		ToyotaQ1 q1 = new ToyotaQ1("Gương dieu khiển điện và có sưởi", 
+				"Âm thanh 6 loa", "Den sương mù", "Vanh duc 20inch");
+		ToyotaQ2 q2 = new ToyotaQ2("Gương đieu khiển điện và có sưởi", 
+				"Dèn sương mù", "Hệ thống chìa khóa thông minh");
 		
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Chon loai xe can xem: 1. ToyotaQ1 - 2. ToyotaQ2");

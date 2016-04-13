@@ -4,11 +4,12 @@ public class ToyotaQ1 extends ToyotaQ {
 	private String guong;
 	private String amThanh;
 	private String denSuongMu;
-	public ToyotaQ1(String guong, String amThanh, String denSuongMu) {
+	public ToyotaQ1(String guong, String amThanh, String denSuongMu, String vanh) {
 		super();
 		this.amThanh = amThanh;
 		this.guong = guong;
 		this.denSuongMu = denSuongMu;
+		this.vanh = vanh;
 	}
 	
 	@Override

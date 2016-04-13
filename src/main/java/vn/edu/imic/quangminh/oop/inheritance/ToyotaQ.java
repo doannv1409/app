@@ -1,13 +1,14 @@
 package vn.edu.imic.quangminh.oop.inheritance;
 
 public class ToyotaQ {
-	private static final String LOAI_DIEU_HOA_MAC_DINH = "�?i�?u hòa nhiệt độ";
+	private static final String LOAI_DIEU_HOA_MAC_DINH = "Dieu hoa nhiet do";
 	private static final String NONG_DO_KHI_THAI = "99g/km";
 	private static final String MUC_TIEU_THU_MAC_DINH = "3,6lit/100km";
 	private static final String XY_LANH = "Xy lanh VVT-I dung tích 1lit/3 chiếc";
 	private static final String CAN_GAT = "Cần gạt nước cảm biến";
-	private static final String DEN = "�?èn pha cảm biến anh sáng";
+	private static final String DEN = "Den pha cảm biến anh sáng";
 	private static final String VANH = "Vành đúc hợp kim 15inch";
+	
 	protected String vanh;
 	protected String den;
 	protected String canGatNuoc;

@@ -14,6 +14,9 @@ public class Person {
 	
 	public void display() {
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
-		System.out.print(name + ", " + simpleDateFormat.format(dob));
+		StringBuilder builder = new StringBuilder(name);
+		builder.append(", ").append(simpleDateFormat.format(dob));
+		
+		System.out.print(builder.toString());
 	}
 }
