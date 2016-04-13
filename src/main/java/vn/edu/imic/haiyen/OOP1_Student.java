@@ -10,12 +10,12 @@ public class OOP1_Student {
 		
 	}
 
-	public OOP1_Student(String masv, String hoten, String email, String phone) {
+	/* public OOP1_Student(String masv, String hoten, String email, String phone) {
 		this.masv = masv;
 		this.hoten = hoten;
 		this.email = email;
 		this.phone = phone;
-	}
+	}*/
 
 	public String getMasv() {
 		return masv;
