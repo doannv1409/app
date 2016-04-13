@@ -1,19 +1,23 @@
 package vn.edu.imic.vumanh;
 
-public class integerNumber{
-	private String value;
+public class IntegerNumber {
+	public int value;
 	
-	public integerNumber(){
+	public IntegerNumber(){
 		
 	}
-	public integerNumber(String value){
-		this.value= value;
+	
+	public IntegerNumber(int value){
+		this.value = value;
 	}
-	public  void setintegerNumber(String value){
-		this.value=value;
-	}
-	public String getintegerNumber(){
+	
+	public int getValue() {
 		return this.value;
 	}
-
+	
+	public void setValue(int value) {
+		this.value = value;
+	}
 }
+
+
