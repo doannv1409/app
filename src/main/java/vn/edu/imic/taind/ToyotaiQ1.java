@@ -13,7 +13,7 @@ public class ToyotaiQ1 extends ToyotaiQ {
 //		this.den = den;
 //		// TODO Auto-generated constructor stub
 //	}
-
+ 
 	public ToyotaiQ1() {
 		// TODO Auto-generated constructor stub
 	}

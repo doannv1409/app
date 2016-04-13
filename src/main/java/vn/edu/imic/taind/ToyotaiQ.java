@@ -7,7 +7,7 @@ public class ToyotaiQ {
 	public String xylanh = "Xy lanh VVT-I dung tich 1lit/3chiec";
 	public String nhienlieu = "Tieu thu nhien lieu: 3.6lit/100km";
 	public String khithai = "Nong do khi thai: 99g/km";
-	public String dieuhoa = "Dieu hoa nhiet do";
+	public String dieuhoa = "Dieu hoa nhiet do"; 
 	
 	public ToyotaiQ(String vanh, String denpha, String cangat, String xylanh,
 			String nhienlieu, String khithai, String dieuhoa){

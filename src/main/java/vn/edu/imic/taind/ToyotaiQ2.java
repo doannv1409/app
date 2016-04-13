@@ -7,7 +7,7 @@ public class ToyotaiQ2 extends ToyotaiQ{
 	public ToyotaiQ2() {
 		// TODO Auto-generated constructor stub
 	}
-
+ 
 	@Override
 	public String toString() {
 		StringBuilder str = new StringBuilder();
