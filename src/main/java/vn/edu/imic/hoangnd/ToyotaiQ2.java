@@ -7,7 +7,7 @@ public class ToyotaiQ2 extends Toyota{
 	public String heThong = "He thong chia khoa thong minh";
 
 
-	public ToyotaiQ2() {
+	public ToyotaiQ2() { 
 		// TODO Auto-generated constructor stub
 	}
 	

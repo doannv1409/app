@@ -1,6 +1,6 @@
 package vn.edu.imic.hoangnd;
 
-public class Toyota {
+public class Toyota { 
 	public String vanhDuc = "Vanh duc hop kim 15inch";
 	public String denPha = "Den pha cam bien anh sang";
 	public String canGat = "Can gat nuoc cam bien";

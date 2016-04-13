@@ -14,7 +14,7 @@ public class ToyotaiQ1 extends Toyota{
 //		this.denSuongMu = denSuongMu;
 //	}
 
-	public ToyotaiQ1() {
+	public ToyotaiQ1() { 
 		// TODO Auto-generated constructor stub
 	}
 	
