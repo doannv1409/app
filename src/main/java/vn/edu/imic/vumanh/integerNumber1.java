@@ -1,12 +1,23 @@
-//package vn.edu.imic.vumanh;
-//
-//public class integerNumber1 {
-//	public static void main(String[] args) {
-//		integerNumber Number1= new integerNumber();
-//		Number1=value 2;
-//		integerNumber Number2=new integerNumber();
-//		Number2=value 4;
-//		printArea(integerNumber);
-//	}
-//
-//}
+package vn.edu.imic.vumanh;
+
+public class IntegerNumber1 {
+	public static void main(String[] args) {
+		
+
+		IntegerNumber Number1 = new IntegerNumber();
+		Number1.value = 1;
+		IntegerNumber Number2 = new IntegerNumber();
+		Number2.value = 2;
+		
+		IntegerNumber result = sum(Number1, Number2);
+		
+		System.out.println("Tong 2 so: " + result.value);
+	}
+	public static IntegerNumber sum(IntegerNumber Number1, 
+			IntegerNumber Number2){
+		IntegerNumber result = new IntegerNumber();
+		result.value = Number1.value + Number2.value;
+		return result;
+	}
+	
+}

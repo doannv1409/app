@@ -28,9 +28,9 @@ public class Students_test {
 		sv04.setPhone("0988 123 459");
 		
 		System.out.println("Ma SV "+"   "+"Ho va ten"+ "             "+"Email"+"                "+"Phone"+"      ");
-		System.out.println(sv01.getMasv()+"     "+sv01.getHoten()+"        "+sv01.getEmail()+"    "+sv01.getPhone());
+		System.out.println(sv01.getMasv()+"     "+sv01.getHoten()+"    "+sv01.getEmail()+"    "+sv01.getPhone());
 		System.out.println(sv02.getMasv()+"     "+sv02.getHoten()+"    "+sv02.getEmail()+"    "+sv02.getPhone());
-		System.out.println(sv03.getMasv()+"     "+sv03.getHoten()+"       "+sv03.getEmail()+"     "+sv03.getPhone());
-		System.out.println(sv04.getMasv()+"     "+sv04.getHoten()+"       "+sv04.getEmail()+"     "+sv04.getPhone());
+		System.out.println(sv03.getMasv()+"     "+sv03.getHoten()+"     "+sv03.getEmail()+"     "+sv03.getPhone());
+		System.out.println(sv04.getMasv()+"     "+sv04.getHoten()+"    "+sv04.getEmail()+"     "+sv04.getPhone());
 	}
 }
