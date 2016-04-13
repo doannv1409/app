@@ -92,7 +92,7 @@ public class People {
 		//dung thuoc tinh sua mau toc, ngon ngu cho doi tuong
 		people1.setHairColor("Do");
 		people1.setLanguage("VNI, ENG");
-		
+	
 		people2.setHairColor("Tim");
 		people2.setLanguage("VNI, ENG");
 		
@@ -102,17 +102,29 @@ public class People {
 		people4.setHairColor("Vang");
 		people4.setLanguage("ENG,VNI");
 		
-		System.out.println("-----------" + "1" + "------------");
+		System.out.println("-----------" + people1.getId() + "------------");
 		printPeople(people1);
-		System.out.println("-----------" + "2" + "------------");
+		System.out.println("-----------" + people2.getId() + "------------");
 		printPeople(people2);
-		System.out.println("-----------" + "3" + "------------");
+		System.out.println("-----------" + people3.getId() + "------------");
 		printPeople(people3);
-		System.out.println("-----------" + "4" + "------------");
+		System.out.println("-----------" + people4.getId() + "------------");
 		printPeople(people4);
 		
 	}
 	
+	public int getNumberleg() {
+		return numberleg;
+	}
+
+	public int getNumberarm() {
+		return numberarm;
+	}
+
+	public String getHaircolor() {
+		return haircolor;
+	}
+
 	public static void printPeople(People people){
 			System.out.println("+ Ho va Ten : " + people.getName());
 			System.out.println("+ So chan : " + people.getNumberLeg() + "-" + "So tay : " + people.getNumberArm() + "-" + "Mau toc" + people.getHairColor());
