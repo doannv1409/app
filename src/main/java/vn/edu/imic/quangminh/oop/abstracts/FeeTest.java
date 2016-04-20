@@ -6,5 +6,8 @@ public class FeeTest {
 		fee.deposit(1000);
 		fee.withdraw(100);
 		fee.endMonth();
+		
+		NickDime nickDime = new NickDime();
+		nickDime.endMonth();
 	}
 }
