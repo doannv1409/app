@@ -5,10 +5,9 @@ public class Gambler extends Account{
 	
 	@Override
 	protected void withdraw(double amount) {
-		this.balance -= amount;
 		this.transactions++;
-		if(Math.random() >= 0.49){
-			this.balance -= amount;
+		if(Math.random() > 0.49){
+			this.balance -= 2*amount;
 		} 
 	} 
 	

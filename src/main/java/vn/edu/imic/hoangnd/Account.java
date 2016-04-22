@@ -3,7 +3,6 @@ package vn.edu.imic.hoangnd;
 public abstract class Account {
 	protected double balance = 50;
 	protected int transactions = 0;
-	protected int count;
 
 	protected void deposit(double amount) {
 		this.balance += amount;
