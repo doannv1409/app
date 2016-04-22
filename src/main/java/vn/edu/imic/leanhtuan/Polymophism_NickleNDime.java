@@ -4,10 +4,6 @@ import java.util.Scanner;
 
 public class Polymophism_NickleNDime extends Polymophism_Account {
 
-	public Polymophism_NickleNDime(double balance, int transactions) {
-		super(balance, transactions);
-		// TODO Auto-generated constructor stub
-	}
 
 	public double withdrawCount() {
 		double finalBalance = this.transactions * 0.5;

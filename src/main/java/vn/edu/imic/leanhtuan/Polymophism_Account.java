@@ -7,10 +7,6 @@ public abstract class Polymophism_Account {
 	protected double balance;
 	protected int transactions = 0;
 	
-	public Polymophism_Account(double balance, int transactions){
-		this.balance = balance;
-		this.transactions = transactions;
-	}
 	
 	public void deposit(){
 		double amount;
