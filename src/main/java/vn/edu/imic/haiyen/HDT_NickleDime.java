@@ -15,7 +15,9 @@ public class HDT_NickleDime extends HDT_Account {
 	@Override
 	protected double endMonthCharge() {
 		// TODO Auto-generated method stub
-		return withdrawCount * FEE;
+		double fee =  this.withdrawCount * FEE;
+		//this.withdrawCount=0;
+		return fee;
 	}
 
 	@Override

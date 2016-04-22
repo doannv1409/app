@@ -41,9 +41,9 @@ public abstract class HDT_Triangle {
 		this.side3 = side3;
 	}
 
-	public abstract void Area();
+	public abstract void area();
 	
-	public abstract void Perimeter();
+	public abstract void perimeter();
 	
 	public abstract String toString();
 	

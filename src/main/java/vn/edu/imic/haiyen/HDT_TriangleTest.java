@@ -6,7 +6,7 @@ public class HDT_TriangleTest {
 		test.side1 = 10;
 		test.side2 = 30;
 		test.side3 = 35;
-		test.Area();
-		test.Perimeter();
+		test.area();
+		test.perimeter();
 	}
 }
