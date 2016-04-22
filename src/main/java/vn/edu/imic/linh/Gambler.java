@@ -9,7 +9,7 @@ public class Gambler extends Account {
 	
 	@Override
 	protected double endMonthCharge(){
-		return 1;
+		return 0;
 	}
 	
 	private double createFee(double amount){

@@ -7,7 +7,7 @@ public abstract class Polymophism_Account {
 	protected double balance;
 	protected int transactions = 0;
 	
-	
+	//Remove scanner in method deposit, withdraw
 	public void deposit(){
 		double amount;
 		Scanner scan = new Scanner(System.in);
