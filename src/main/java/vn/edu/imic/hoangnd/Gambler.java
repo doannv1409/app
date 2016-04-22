@@ -10,7 +10,7 @@ public class Gambler extends Account{
 		if(Math.random() >= 0.49){
 			this.balance -= amount;
 		} 
-	}
+	} 
 	
 	@Override
 	protected void endMonth() {

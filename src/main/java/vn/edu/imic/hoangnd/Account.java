@@ -13,7 +13,7 @@ public abstract class Account {
 	protected void withdraw(double amount) {
 		this.balance -= amount;
 		this.transactions++;
-	} 
+	}  
 
 	protected void endMonth() {
 		double fee = endMonthCharge();

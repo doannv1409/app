@@ -24,7 +24,7 @@ public class Triangle {
 	public static double Perimeter(Triangle triangle) {
 		double perimeter = triangle.side1 + triangle.side2 + triangle.side3;
 		return perimeter;
-	} 
+	}  
 
 	@Override
 	public String toString() {

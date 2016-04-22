@@ -25,7 +25,7 @@ public class Rectangle {
 
 	public static double Perimeter(Rectangle rectangle) {
 		return (rectangle.width + rectangle.height) * 2;
-	} 
+	}  
 
 	public static void main(String[] args) {
 		Rectangle rectangle1 = new Rectangle(4, 40);
