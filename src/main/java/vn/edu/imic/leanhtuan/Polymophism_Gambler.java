@@ -1,16 +1,13 @@
 package vn.edu.imic.leanhtuan;
 
 import java.util.Random;
-import java.util.Scanner;
 
 public class Polymophism_Gambler extends Polymophism_Account{
 
 	@Override
-	public void withdraw(){
-		Scanner scan = new Scanner(System.in);
-		double amount;
+	public void withdraw(double amount){
+		
 		System.out.println("Moi Nhap So Tien Can Rut : ");
-		amount = scan.nextDouble();
 		Random random = new Random();
 		int temple = random.nextInt(100);
 		if((temple >=0 )&&(temple <=49)){
@@ -18,10 +15,9 @@ public class Polymophism_Gambler extends Polymophism_Account{
 		}
 		
 		else{
-			this.balance -= 2*amount;
+			balance -= 2*amount;
 		}
-		scan.close();
-		this.transactions ++;
+		transactions ++;
 	}
 	
 	@Override

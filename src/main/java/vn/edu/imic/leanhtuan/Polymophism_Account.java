@@ -1,6 +1,5 @@
 package vn.edu.imic.leanhtuan;
 
-import java.util.Scanner;
 
 public abstract class Polymophism_Account {
 
@@ -8,33 +7,24 @@ public abstract class Polymophism_Account {
 	protected int transactions = 0;
 	
 	//Remove scanner in method deposit, withdraw
-	public void deposit(){
-		double amount;
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Moi Nhap Vao So Tien Can Gui :");
-		amount = scan.nextDouble();
-		this.balance += amount;
-		scan.close();
-		this.transactions ++;
+	public void deposit(double amount){
+		
+		balance += amount;
+		transactions ++;
 		
 	}
 
-	protected void withdraw(){
-		double amount;
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Moi Nhap Vao So Tien Can Rut :");
-		amount = scan.nextDouble();
-		this.balance -= amount;
-		this.transactions ++;
-		scan.close();
+	protected void withdraw(double amount){
 		
+		balance -= amount;
+		transactions ++;
 	}
 	
 	protected void endMonth(){
 		double fee = endMonthCharge();
-		this.balance -= fee;
-		System.out.println("So Tien Con Lai La : " + this.balance);
-		System.out.println("Tong So Giao Dich : " + this.transactions);
+		balance -= fee;
+		System.out.println("So Tien Con Lai La : " + balance);
+		System.out.println("Tong So Giao Dich : " + transactions);
 		
 	}
 	
