@@ -6,21 +6,23 @@ public class HDT_NickleDime extends HDT_Account {
 
 	@Override
 	protected void endMonth() {
-		double count = this.endMonthCharge();
-		this.balance -= count;
-		System.out.println("So tien con lai trong tai khoan: " + this.balance);
-		System.out.println("Tong so giao dich: " + this.withdrawCount);
+//		double count = this.endMonthCharge();
+//		this.balance -= count;
+//		System.out.println("So tien con lai trong tai khoan: " + this.balance);
+//		System.out.println("Tong so giao dich: " + this.withdrawCount);
+		super.endMonth();
+		//Reset count withdraw here
 	};
 
 	@Override
 	protected double endMonthCharge() {
-		// TODO Auto-generated method stub
+		// TODO set withdrawCount ve 0
 		return withdrawCount * FEE;
 	}
 
 	@Override
 	protected void withdraw(double amount) {
-		this.balance -= amount;// amount >0
+		super.withdraw(amount);
 		withdrawCount++;
 
 	}
