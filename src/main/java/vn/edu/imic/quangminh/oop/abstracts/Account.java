@@ -17,15 +17,17 @@ public abstract class Account {
 	}
 	
 	protected void endMonth() {
-		double fee = endMonthCharge();
+		double fee = this.endMonthCharge();
 		
-		double remainingBalace = this.balance - fee;
+		this.balance -= fee;
 		
-		System.out.println("So tien con lai trong TK: " + remainingBalace);
+		System.out.println("So tien con lai trong TK: " + this.balance);
 		System.out.println("Tong so giao dich: " + this.transactions);
 		
 		this.transactions = 0;
 	}
 	
+	//Tinh phi trong thang: Tuy vao loai tai khoan se co cash tinh phi 
+	//khac nhau -> abstract method
 	protected abstract double endMonthCharge();
 }

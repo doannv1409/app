@@ -10,23 +10,18 @@ public class Manage_Inheritance extends Employee_Inheritance{
 		
 	}
 
-		
-		public void setAssistant(Employee_Inheritance employee) {
+	public Employee_Inheritance getAssistant() {
+		return assistant;
+	}
+
+	public void setAssistant(Employee_Inheritance assistant) {
+		this.assistant = assistant;
+	}
+
 	
-		}
-		
-		
-		@Override
-		public String toString() {
-			return "Thong tin theo format la : " + name  + birthday + salary;
-}
-		
-		@Override
-		public void display(){
-			System.out.println("assistant of" + super.name + "is" + assistant.name);
-		}
-
-
-		
-		
+	
+	public void display(){
+		super.display();
+		System.out.println("assistant of " + name + " is " + assistant.name);
+	}
 }

@@ -34,4 +34,4 @@ public class ToyotaiQ1 extends ToyotaiQ {
 	
 		
 	}
-}
+

@@ -1,13 +1,11 @@
-package vn.edu.imic.quangminh.oop.abstracts;
+package vn.edu.imic.haiyen;
 
 public class FeeTest {
 	public static void main(String[] args) {
-		Fee fee = new Fee();
+		Fee fee=new Fee();
 		fee.deposit(1000);
 		fee.withdraw(100);
 		fee.endMonth();
-		
-		NickDime nickDime = new NickDime();
-		nickDime.endMonth();
 	}
+
 }
