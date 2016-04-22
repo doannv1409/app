@@ -17,9 +17,7 @@ public class HDT_NickleDime extends HDT_Account {
 	@Override
 	protected double endMonthCharge() {
 		// TODO set withdrawCount ve 0
-		double fee =  this.withdrawCount * FEE;
-		//this.withdrawCount=0;
-		return fee;
+		return withdrawCount * FEE;
 	}
 
 	@Override
