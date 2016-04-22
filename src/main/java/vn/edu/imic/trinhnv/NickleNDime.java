@@ -1,8 +1,8 @@
 package vn.edu.imic.trinhnv;
 
 class NickleNDime extends Account {
-	
-	double withdrawCount = 0.5;
+	//TODO implement lai phan tru tien cuoi thang
+	double withdrawCount = 0;
 	
 	@Override
 	protected void withdraw(double amount) {
