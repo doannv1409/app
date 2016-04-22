@@ -1,47 +1,29 @@
 package vn.edu.imic.leanhtuan;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Person_Inheritance {
+	
 	protected String name;
 	protected Date birthday;
 	
 	
-	public void setBirthday(Date birthday) {
+	public Person_Inheritance(String name, Date birthday){
+		this.name = name;
 		this.birthday = birthday;
 	}
 	
-	public String toString() {
+	public String toString(){
+		StringBuilder info = new StringBuilder("Tra Ve Thong Tin Theo Format :");
+		info.append(name).append(" , ");
 		
-		return "Tra ve thong tin theo format =" + name + ", birthday=" + birthday ;
+		return name;
+		
 	}
-	
 	
 	public void display(){
-		System.out.println(name + birthday);
+		SimpleDateFormat simpleformat = new SimpleDateFormat("dd/MM/yyyy");
+		System.out.println(name + ", " + simpleformat.format(birthday));
 	}
-
-	public Date getBirthday() {
-
-		return this.birthday;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-	
-//	public static void main(String [] args){
-//		Person_Inheritance person1 = new Person_Inheritance();
-//		person1.name = "Le Anh Tuan";
-//		person1.birthday = new Date();
-//		
-//		person1.toString();
-//		person1.display();
-//	}
-	}
-	
-
+}

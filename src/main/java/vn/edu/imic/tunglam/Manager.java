@@ -3,29 +3,27 @@ package vn.edu.imic.tunglam;
 import java.util.Date;
 
 public class Manager extends Employee {
+	private Employee assitant;
+
 	public Manager(String name, Date birthday, double salary) {
 		super(name, birthday, salary);
 	}
 
-	public void setAssitant(Employee employee) {
-		this.name =name;
+	public Employee setAssitant(){
+		return assitant;
+	}
+	public void setAssitant(Employee assitant) {
+		this.assitant =assitant;
 	}
 
 	public String toString() {
 		return name + "," + birthday + "," + getSalary();
 	}
 
-	public void display(String name, String assitantName) {
-		System.out.println("assitant of " + name + " is " +assitantName );
+	public void display(String name, String assitant) {
+		System.out.println("assitant of " + name + " is " +assitant );
 
 	}
 
-	public static void main(String[] args) {
-		Date birthday = new Date();
-		Manager b = new Manager("Lam", birthday, 55555);
-		Employee c = new Employee(" Minh", birthday, 8888);
-		b.setAssitant(c);
-		b.toString();
-		b.display("Lam","Minh");
-	}
+	
 }
