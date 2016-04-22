@@ -1,24 +1,29 @@
 package vn.edu.imic.haiyen;
 
-public class B1_ToyotaiQ1 extends B1_ToyotaiQ{
-	protected String thongso1;
-	
-	public B1_ToyotaiQ1() {
-		// TODO Auto-generated constructor stub
+public class B1_ToyotaiQ1 extends B1_ToyotaiQ {
+	protected String amThanh6Loa;
+
+	public B1_ToyotaiQ1(String vanhDuc, String denPha, String denSuongMu, String canGatNuoc, String xyLanh,
+			String tieuThuNhienLieu, String nongDoKhiThai, String dieuHoaNhietDo, String guong, String loSuoi) {
+		super(vanhDuc, canGatNuoc, tieuThuNhienLieu, denPha, denSuongMu, xyLanh, nongDoKhiThai, dieuHoaNhietDo, guong,
+				loSuoi);
+
 	}
 
-	public B1_ToyotaiQ1(String thongso1){
-		super();
-		this.thongso1=thongso1;
+	public String getAmThanh6Loa() {
+		return amThanh6Loa;
 	}
-	
+
+	public void setAmThanh6Loa(String amThanh6Loa) {
+		this.amThanh6Loa = amThanh6Loa;
+	}
+
 	@Override
-	public void display(){
-		super.display();
-		System.out.println("2-Phu kien di rieng cho dong xe nay:\n + Guong dieu khien dien va co suoi \n + Am thanh 6 loa \n + Den suong mu");
+	public void inThongSo() {
+		super.inThongSo();
+		System.out.println("+ Guong Co : " + guong);
+		System.out.println("+ " + loSuoi);
+		System.out.println("+ " + amThanh6Loa);
 	}
-	
-	
-	
 
 }

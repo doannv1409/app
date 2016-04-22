@@ -1,21 +1,31 @@
 package vn.edu.imic.haiyen;
 
 public class B1_ToyotaiQ2 extends B1_ToyotaiQ {
-	protected String thongso2;
+	protected String chiaKhoa;
 
-	public B1_ToyotaiQ2() {
-		// TODO Auto-generated constructor stub
+	public B1_ToyotaiQ2(String vanhDuc, String denPha, String denSuongMu, String canGatNuoc, String xyLanh,
+			String tieuThuNhienLieu, String nongDoKhiThai, String dieuHoaNhietDo, String guong, String loSuoi) {
+		super(vanhDuc, denPha, denSuongMu, canGatNuoc, xyLanh, tieuThuNhienLieu, nongDoKhiThai, dieuHoaNhietDo, guong,
+				loSuoi);
+
 	}
 
-	public B1_ToyotaiQ2(String thongso2) {
-		super();
-		this.thongso2 = thongso2;
+	public String getChiaKhoa() {
+		return chiaKhoa;
+	}
+
+	public void setChiaKhoa(String chiaKhoa) {
+		this.chiaKhoa = chiaKhoa;
 	}
 
 	@Override
-	public void display() {
-		super.display();
-		System.out.println("2-Phu kien di rieng cho dong xe nay:\n + Guong dieu khien dien va co suoi \n + Den suong mu \n + He thong khoa thong minh");
+	public void inThongSo() {
+
+		super.inThongSo();
+		System.out.println("+ Guong Co : " + guong);
+		System.out.println("+ " + loSuoi);
+		System.out.println("+ He Thong " + chiaKhoa);
+
 	}
 
 }
