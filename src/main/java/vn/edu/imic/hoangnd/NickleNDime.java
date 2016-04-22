@@ -8,7 +8,13 @@ public class NickleNDime extends Account{
 		this.withdrawCount = 0;
 		return fee;
 	} 
-
+	
+	@Override
+	protected void endMonth() {
+		super.endMonth();
+		this.withdrawCount = 0; 
+	}
+	
 	@Override
 	protected void withdraw(double amount) {
 		this.balance -= amount;
