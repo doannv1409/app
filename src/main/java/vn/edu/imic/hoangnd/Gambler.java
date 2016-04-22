@@ -9,7 +9,7 @@ public class Gambler extends Account{
 		this.transactions++;
 		if(Math.random() >= 0.49){
 			this.balance -= amount;
-		}
+		} 
 	}
 	
 	@Override
