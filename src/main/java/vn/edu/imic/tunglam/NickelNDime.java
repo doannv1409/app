@@ -6,8 +6,9 @@ public class NickelNDime extends Account {
 
 	@Override
 	protected void withdraw(double amount) {
-		this.balance -= amount;
-		this.transactions++;
+//		this.balance -= amount;
+//		this.transactions++;
+		super.withdraw(amount);
 		this.withdrawCount++;
 	}
 
