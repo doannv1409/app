@@ -20,7 +20,7 @@ public abstract class Account {
 		System.out.println("So tien con lai: " + this.balance);
 		System.out.println("So giao dich: " + this.transactions);
 		this.transactions = 0;
-	}
+	} 
 
 	protected abstract double endMonthCharge();
 

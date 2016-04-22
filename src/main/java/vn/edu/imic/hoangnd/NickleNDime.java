@@ -12,7 +12,7 @@ public class NickleNDime extends Account{
 	@Override
 	protected void endMonth() {
 		super.endMonth();
-		this.withdrawCount = 0;
+		this.withdrawCount = 0; 
 	}
 	
 	@Override
