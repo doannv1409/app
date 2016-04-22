@@ -4,7 +4,9 @@ public class NickleNDime extends Account{
 	protected int withdrawCount;
 	@Override
 	protected double endMonthCharge() {
-		return this.withdrawCount*0.5;
+		double fee = this.withdrawCount*0.5;
+		this.withdrawCount = 0;
+		return fee;
 	} 
 
 	@Override
