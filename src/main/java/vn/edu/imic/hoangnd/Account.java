@@ -3,7 +3,6 @@ package vn.edu.imic.hoangnd;
 public abstract class Account {
 	protected double balance = 50;
 	protected int transactions = 0;
-	protected int count;
 
 	protected void deposit(double amount) {
 		this.balance += amount;
@@ -21,7 +20,7 @@ public abstract class Account {
 		System.out.println("So tien con lai: " + this.balance);
 		System.out.println("So giao dich: " + this.transactions);
 		this.transactions = 0;
-	}
+	} 
 
 	protected abstract double endMonthCharge();
 

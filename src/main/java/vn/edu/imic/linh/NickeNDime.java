@@ -18,6 +18,12 @@ public class NickeNDime extends Account {
 		this.withDrawCount++;
 	}
 	
+	@Override
+	protected void endMonth(){
+		super.endMonth();
+		this.withDrawCount = 0;
+	}
+	
 	public static void main(String[] args){
 
 		NickeNDime  nickendime = new NickeNDime(10000);

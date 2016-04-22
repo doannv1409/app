@@ -5,7 +5,7 @@ public class Rectangle {
 	protected double height = 1;
 	protected String color = "white";
 
-	public void Rectangle() {
+	public Rectangle() {
 
 	}
 
@@ -19,12 +19,12 @@ public class Rectangle {
 		this.color = color;
 	}
 
-	public static double Area(Rectangle rectangle) {
-		return rectangle.width * rectangle.height;
+	public double getArea() {
+		return width * height;
 	}
 
-	public static double Perimeter(Rectangle rectangle) {
-		return (rectangle.width + rectangle.height) * 2;
+	public double getPerimeter() {
+		return (width + height) * 2;
 	}  
 
 	public static void main(String[] args) {
@@ -33,11 +33,11 @@ public class Rectangle {
 		rectangle1.setColor("red");
 		rectangle2.setColor("red");
 		System.out.println("Rectangle1: " + rectangle1.toString());
-		System.out.println("Area: " + Area(rectangle1));
-		System.out.println("Perimeter: " + Perimeter(rectangle1));
+		System.out.println("Area: " + rectangle1.getArea());
+		System.out.println("Perimeter: " + rectangle1.getPerimeter());
 		System.out.println("\nRectangle2: " + rectangle2.toString());
-		System.out.println("Area: " + Area(rectangle2));
-		System.out.println("Perimeter: " + Perimeter(rectangle2));
+		System.out.println("Area: " + rectangle2.getArea());
+		System.out.println("Perimeter: " + rectangle2.getPerimeter());
 	}
 
 	@Override
