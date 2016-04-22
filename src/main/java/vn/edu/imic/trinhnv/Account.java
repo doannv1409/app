@@ -15,14 +15,13 @@ abstract class Account {
 	}
 	
 	protected void endMoth(){
-		//
-		double fee = endMothCharge();
-		//
+		double fee = this.endMothCharge();
+		this.balance -= fee;
+		System.out.println("So tien con lai trong TK : " + this.balance);
+		System.out.println("So giao dich trong thang : " + this.transactions);
+		
+		this.transactions = 0;
 	}
 	
 	protected abstract double endMothCharge();
-	
-	public static void main(String[] args) {
-		
-	}
 }
