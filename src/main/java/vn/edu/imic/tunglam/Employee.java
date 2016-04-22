@@ -3,26 +3,16 @@ package vn.edu.imic.tunglam;
 import java.util.Date;
 
 public class Employee extends Person1 {
-	private double salary;
+	private int salary;
 
-	public Employee(String name, Date birthday, double salary) {
-		super();
-
+	public Employee(String name, Date dob, int salary) {
+		super(name, dob);
+		this.salary = salary;
 	}
 
-	public double getSalary() {
-		return salary;
-
+	@Override
+	public void display() {
+		super.display();
+		System.out.print(", " + salary);
 	}
-
-	public String toString() {
-		return name + "," + birthday + "," + salary;
-	}
-
-	public void display(String name, String birthday, double salary) {
-		System.out.println(name + "," + birthday + "," + salary);
-	}
-
-	
-
 }
