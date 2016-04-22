@@ -5,11 +5,6 @@ import java.util.Scanner;
 
 public class Polymophism_Gambler extends Polymophism_Account{
 
-	public Polymophism_Gambler(double balance, int transactions) {
-		super(balance, transactions);
-		// TODO Auto-generated constructor stub
-	}
-
 	@Override
 	public void withdraw(){
 		Scanner scan = new Scanner(System.in);
