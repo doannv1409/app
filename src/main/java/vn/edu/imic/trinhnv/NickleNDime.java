@@ -6,13 +6,16 @@ class NickleNDime extends Account {
 	
 	@Override
 	protected void withdraw(double amount) {
-		this.balance -= (amount + withdrawCount);
+		this.balance -= (amount);
 		this.transactions ++;
+		this.withdrawCount ++;
 	}
 	
 	@Override
 	protected double endMothCharge() {
 		// TODO Auto-generated method stub
-		return 0;
+		double tax = this.withdrawCount * 0.5;
+		this.withdrawCount = 0;
+		return tax;
 	}
 }

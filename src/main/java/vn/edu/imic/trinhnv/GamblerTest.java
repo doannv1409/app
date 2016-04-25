@@ -5,6 +5,8 @@ public class GamblerTest {
 		Gambler gambler = new Gambler();
 		gambler.deposit(1000);
 		gambler.withdraw(100);
+		gambler.withdraw(100);
+		gambler.withdraw(100);
 		gambler.endMoth();
 	}
 }
