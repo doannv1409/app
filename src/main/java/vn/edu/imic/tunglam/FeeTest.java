@@ -15,6 +15,11 @@ public class FeeTest {
 			nickDime.withdraw(100);
 			nickDime.withdraw(100);
 			nickDime.endMonth();
+			
+			Gambler gambler = new Gambler();
+			gambler.deposit(10000);
+			gambler.withdraw(400);
+			gambler.endMonth();
 		
 		}
 	}
