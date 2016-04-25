@@ -4,7 +4,7 @@ public class ToyotaQI {
 	private static final String LOAI_DIEU_HOA_MAC_DINH = "Dieu hoa nhiet do";
 	private static final String NONG_DO_KHI_THAI = "99g/km";
 	private static final String MUC_TIEU_THU_MAC_DINH = "3,6lit/100km";
-	private static final String XY_LANH = "Xy lanh VVT-I dung tich 1lit/3 chiece\";
+	private static final String XY_LANH = "Xy lanh VVT-I dung tich 1lit/3 chiec";
 	private static final String CAN_GAT = "Can gat nuoc cam bien";
 	private static final String DEN = "Den pha anh sang";
 	private static final String VANH = "Vanh duc hop kim 15inch";
