@@ -1,6 +1,5 @@
 package vn.edu.imic.leanhtuan;
 
-import sun.org.mozilla.javascript.internal.ast.WithStatement;
 
 public class Rectangle_Lever2 {
 	
