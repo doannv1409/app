@@ -7,6 +7,7 @@ public class Array_Exercise1 {
 		int n;
 		int sum = 0;
 		int max = 0;
+		int min = 1;
 		Scanner input = new Scanner(System.in);
 	    System.out.print("Enter the number of elements array: ");
 	    n = input.nextInt();
@@ -24,10 +25,14 @@ public class Array_Exercise1 {
 	    	if (max < array[i]) {
 				max = array[i];
 			}
+	    	if (min > array[i]) {
+				min = array[i];
+			}
 			System.out.println(array[i]);
 		}
 
 	    System.out.println("Sum all elements of this array is: " + sum);
 	    System.out.println("The biggest element in this array is: " + max);
+	    System.out.println("The smallest element in this array is: " + min);
 	}
 }
