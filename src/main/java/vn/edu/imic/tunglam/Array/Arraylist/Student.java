@@ -6,6 +6,13 @@ public class Student {
 	protected String address;
 	protected double averageMark;
 
+	public Student(String id, String fullName, String address, double averageMark){
+		this.id = id;
+		this.address = address;
+		this.fullName = fullName;
+		this.averageMark = averageMark;
+		
+	}
 	public String getId() {
 		return id;
 	}
@@ -38,14 +45,4 @@ public class Student {
 		this.averageMark = averageMark;
 	}
 
-	@Override
-	public String toString(){
-		StringBuilder str = new StringBuilder();
-		str.append("Ma Sv ").append(id).append("/n")
-			.append(" Ho va ten: ").append(fullName).append("/n")
-			.append(" Dia chi: ").append(address).append("/n")
-			.append(" Diem trung binh: ").append(averageMark);
-		String info = "id: %s \n Ho va ten: %s\n Dia chi: %s\n Diem trung binh: %s\n ";
-		return String.format(info, id, fullName, address , averageMark);
-	}
 }
