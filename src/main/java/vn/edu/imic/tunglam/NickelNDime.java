@@ -1,6 +1,4 @@
-package vn.edu.imic.TungLam;
-
-import vn.edu.imic.hoangnd.Account;
+package vn.edu.imic.tunglam;
 
 public class NickelNDime extends Account {
 	protected double fee;
