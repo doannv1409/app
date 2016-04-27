@@ -3,7 +3,7 @@ package vn.edu.imic.haiyen;
 public class HDT_TriangleAbstract extends HDT_Triangle {
 
 	@Override
-	public void Area() {
+	public void area() {
 		double p = (side1 + side2 + side3) / 2;
 		double area = Math.sqrt(p * (p - side1) * (p - side2) * (p - side3));
 		System.out.println("p la: " + p);
@@ -11,7 +11,7 @@ public class HDT_TriangleAbstract extends HDT_Triangle {
 	}
 
 	@Override
-	public void Perimeter() {
+	public void perimeter() {
 		double peri = side1 + side2 + side3;
 		System.out.println("chu vi tam giac la: " + peri);
 

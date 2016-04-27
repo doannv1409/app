@@ -1,3 +1,5 @@
+package vn.edu.imic.quangminh.oop.abstracts;
+
 
 
 public abstract class Account {
@@ -17,7 +19,7 @@ public abstract class Account {
 	}
 	
 	protected void endMonth() {
-//		double fee = this.endMonthCharge();
+		double fee = this.endMonthCharge();
 		
 		this.balance -= fee;
 		
