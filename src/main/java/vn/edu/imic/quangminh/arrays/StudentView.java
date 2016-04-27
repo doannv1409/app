@@ -27,7 +27,7 @@ public class StudentView {
 		
 	}
 
-	private void print(List<Student> students) {
+	public void print(List<Student> students) {
 		//Implement
 	} 
 	
