@@ -1,5 +1,6 @@
 package vn.edu.imic.leanhtuan.Arrays;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -21,12 +22,14 @@ public class Student_Manager_Impl implements StudentManager{
 
 	@Override
 	public List<Student> filterByMark(List<Student> students) {
-		for(int i = 0; i < students.size(); i++){
+		 List<Student> result = new ArrayList<>();
+		 
+ 		for(int i = 0; i < students.size(); i++){
 			if(students.get(i).getMark() >=8 ){
-			
+				result.add(students.get(i));
 			}
 		}
-		return students;
+		return result;
 		
 	}
 
