@@ -1,5 +1,7 @@
 package vn.edu.imic.quangminh.oop.abstracts;
 
+
+
 public abstract class Account {
 	protected double balance;
 	protected int transactions;
