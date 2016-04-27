@@ -11,7 +11,7 @@ class Gambler extends Account{
 		if (n >= 49) {
 			balance -= (amount * 2);
 		}
-
+		this.transactions ++;
 	}
 	@Override
 	protected double endMothCharge() {
