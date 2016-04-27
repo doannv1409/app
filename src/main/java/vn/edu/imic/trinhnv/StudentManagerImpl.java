@@ -11,11 +11,9 @@ public class StudentManagerImpl implements StudentManager {
 
 	@Override
 	public void sortByName(List<Student> students) {
-		// TODO Auto-generated method stub
 		Collections.sort(students, new Comparator<Student>() {
 			@Override
 			public int compare(Student s1, Student s2) {
-				// TODO Auto-generated method stub
 				return (s1.getName().compareTo(s2.getName())) ;
 			}
 		});
