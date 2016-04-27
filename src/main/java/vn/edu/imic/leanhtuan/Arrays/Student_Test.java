@@ -41,12 +41,7 @@ public class Student_Test extends Student {
 		System.out.println("-------------------------");
 		printAlpha(list);
 		
-		Collections.sort(list, new Comparator<Student>() {
-			public int compare(Student svA, Student svB) {
-				return svB.getName().compareTo(svA.getName());
-			};
-		});
-
+		
 
 	}
 
@@ -71,7 +66,13 @@ public class Student_Test extends Student {
 			System.out.println("Ho Ten Sinh Vien : " + list.get(i).getName());
 			System.out.println("Dia Chi Sinh Vien :" + list.get(i).getAddress());
 			System.out.println("Diem Trung Binh : " + list.get(i).getAverageMark());
-		
+
+			Collections.sort(list, new Comparator<Student>() {
+				public int compare(Student svA, Student svB) {
+					return svA.getName().compareTo(svB.getName());
+				};
+			});
+
 		}
 	}
 }
