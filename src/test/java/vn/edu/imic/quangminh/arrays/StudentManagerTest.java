@@ -1,6 +1,7 @@
 package vn.edu.imic.quangminh.arrays;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +9,7 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
-import vn.edu.imic.haiyen.StudentManagerImpl;
+import vn.edu.imic.tunglam.Array.Arraylist.StudentImpl;
 
 
 public class StudentManagerTest {
@@ -21,7 +22,7 @@ public class StudentManagerTest {
 	
 	@Before
 	public void setUp() {
-		manager = new StudentManagerImpl();
+		manager = new StudentImpl();
 		students = new ArrayList<>();
 		s1 = new Student(1, "A", "Ha Noi", 5.6);
 		s2 = new Student(2, "D", "Ha Tay", 6);
