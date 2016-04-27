@@ -8,14 +8,12 @@ public class FeeTest {
 			fee.endMonth();
 			
 			NickelNDime nickDime = new NickelNDime();
-			nickDime.deposit(1000);
 			nickDime.withdraw(100);
 			nickDime.withdraw(100);
 			nickDime.withdraw(100);
 			nickDime.withdraw(100);
 			nickDime.withdraw(100);
-			nickDime.endMonth();
-			
+						
 			Gambler gambler = new Gambler();
 			gambler.deposit(10000);
 			gambler.withdraw(400);
