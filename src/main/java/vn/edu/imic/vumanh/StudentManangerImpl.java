@@ -8,21 +8,12 @@ import vn.edu.imic.quangminh.arrays.StudentManager;
 public class StudentManangerImpl implements StudentManager{
 
 	@Override
-	public void sortByName(List<Student> students) {
-		// TODO Auto-generated method stub
-		Student s1= new Student();
-		Student s2= new Student();
-		Student s3= new Student();
-		
-		
-		
-		
+	public void sortByName(List<Student> student1s) {	
 		
 	}
 
 	@Override
-	public List<Student> filterByMark(List<Student> students) {
-		// TODO Auto-generated method stub
+	public List<Student> filterByMark(List<Student> student1s) {
 		return null;
 	}
 
