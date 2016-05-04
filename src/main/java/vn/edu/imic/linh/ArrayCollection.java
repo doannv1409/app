@@ -62,6 +62,8 @@ public class ArrayCollection {
 		System.out.printf("Mang nhap vao la: %s \n", string.toString());
 		System.out.printf("Phan tu nho nhat la: %d \n", array.findMin());
 		System.out.printf("Phan tu lon nhat la: %d \n", array.findMax());
+		
+		scanner.close();
 	}
 	
 }
