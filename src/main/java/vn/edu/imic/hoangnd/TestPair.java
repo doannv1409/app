@@ -6,6 +6,6 @@ public class TestPair {
 		System.out.println("test: " + str.toString());
 		
 		Pair<Integer> intt = new Pair<Integer>(1, 2);
-		System.out.println("test: " + intt.toString()); 
+		System.out.println("test: " + intt.toString());
 	}
 }
