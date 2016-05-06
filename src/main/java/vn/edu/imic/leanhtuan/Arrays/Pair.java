@@ -5,8 +5,6 @@ public class Pair<T> {
 	protected T second;
 
 	public Pair(){
-		first = null;
-		second = null;
 	}
 
 	public Pair(T first, T second){
