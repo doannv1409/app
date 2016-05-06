@@ -33,7 +33,7 @@ public class ArrayAgl<T> {
 	private void bubblesort(T[] a) {
 		for (int i = 0; i < a.length - 1; i++) {
 			for (int j = i+1; j < a.length; j++) {
-				if ((a[i])>(a[j]) {
+				if ((a[i].hashCode())>(a[j].hashCode())) {
 					T temp = a[j];
 					a[j] = a[i];
 					a[i] = temp;
