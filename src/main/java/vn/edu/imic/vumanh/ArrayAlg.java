@@ -1,14 +1,14 @@
 package vn.edu.imic.vumanh;
 
 public class ArrayAlg<T> {
-private T t;
+private T a;
 
 public T getT() {
-	return t;
+	return a;
 }
 
-public void setT(T t) {
-	this.t = t;
+public void setT(T a) {
+	this.a = a;
 }
 public static void main(String [] args){
 	
