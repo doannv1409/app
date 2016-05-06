@@ -10,6 +10,7 @@ public class ArrayAlg <T>{
 		for (T t : a) {
 			System.out.print(t + " ");
 		}
+		System.out.println(" ");
 	}
 	
 	public static <T> void print(T[] a, int start, int end){
@@ -17,9 +18,9 @@ public class ArrayAlg <T>{
 			throw new RuntimeException("Invalid start or end !");
 		}else {
 			for (int i = start; i <= end; i++) {
-				System.out.println(a[i]);
-				System.out.println("");
+				System.out.print(a[i] + " ");
 			}
+			System.out.println(" ");
 		}
 	}
 	
