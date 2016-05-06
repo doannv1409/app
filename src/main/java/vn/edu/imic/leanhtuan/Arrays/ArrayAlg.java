@@ -1,4 +1,4 @@
-package vn.edu.imic.quangminh.arrays;
+package vn.edu.imic.leanhtuan.Arrays;
 
 public class ArrayAlg<T> {
 	protected T start;
