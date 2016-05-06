@@ -7,7 +7,8 @@ public class TestArrayAlg {
 		System.out.print("Array: ");
 		i.print(arr);
 		System.out.println("-------------");
-		ArrayAlg.<Integer>print(arr, 1, 3);
+		ArrayAlg.<Integer>print(arr, 1, 5);
+		System.out.println("-------------");
 		i.maxTwo(arr);
 	}
 }
