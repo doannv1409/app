@@ -3,7 +3,7 @@ package vn.edu.imic.hoangnd;
 public class Pair<T> {
 	
 	private T first;
-	private T second;
+	private T second; 
 
 	public Pair() {
 		first = null;
