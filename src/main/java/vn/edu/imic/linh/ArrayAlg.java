@@ -1,6 +1,6 @@
 package vn.edu.imic.linh;
 
-public class ArrayAlg<T> {
+public class ArrayAlg<T extends Integer> {
 
 	public void print(T[] array){
 		StringBuffer string = new StringBuffer("Mang da nhap: ");
@@ -26,7 +26,7 @@ public class ArrayAlg<T> {
 		int lenght = array.length;
 		for(int i = 0; i<lenght-2;i++){
 			for(int j=i+1;j<lenght-1;j++){
-				if((int)array[i] > (int)array[j]){
+				if(array[i] > array[j]){
 					T tmp = array[i];
 					array[i] = array[j];
 					array[j] = array[i];
