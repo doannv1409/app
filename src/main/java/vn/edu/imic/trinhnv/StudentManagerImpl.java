@@ -22,13 +22,13 @@ public class StudentManagerImpl implements StudentManager {
 
 	@Override
 	public List<Student> filterByMark(List<Student> students) {
-		List<Student> student = new ArrayList<Student>();
-		for (int i = 0; i < student.size(); i++) {
-			if (student.get(i).getMark() >= 8) {
-				student.add(student.get(i));
+		List<Student> SV = new ArrayList<Student>();
+		for (int i = 0; i < students.size(); i++) {
+			if (students.get(i).getMark() >= 8) {
+				SV.add(students.get(i));
 			}
 		}
-		return student;
+		return SV;
 	}
 	
 }
