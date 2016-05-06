@@ -1,6 +1,6 @@
 package vn.edu.imic.leanhtuan.Arrays;
 
-import vn.edu.imic.quangminh.arrays.ArrayAlg;
+import vn.edu.imic.leanhtuan.Arrays.*;
 
 public class TestArrayAlg {
 		public static void main(String [] args){
