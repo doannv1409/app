@@ -9,7 +9,8 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
-import vn.edu.imic.tunglam.Array.Arraylist.StudentImpl;
+import vn.edu.imic.trinhnv.StudentManagerImpl;
+
 
 
 
@@ -24,7 +25,7 @@ public class StudentManagerTest {
 	
 	@Before
 	public void setUp() {
-		manager = new StudentImpl();
+		manager = new StudentManagerImpl();
 		students = new ArrayList<>();
 		s1 = new Student(1, "A", "Ha Noi", 5.6);
 		s2 = new Student(2, "D", "Ha Tay", 6);
