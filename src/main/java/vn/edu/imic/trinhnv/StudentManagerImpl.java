@@ -1,5 +1,6 @@
 package vn.edu.imic.trinhnv;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -21,9 +22,13 @@ public class StudentManagerImpl implements StudentManager {
 
 	@Override
 	public List<Student> filterByMark(List<Student> students) {
-		// TODO Auto-generated method stub
-		
-		return null;
+		List<Student> student = new ArrayList<Student>();
+		for (int i = 0; i < student.size(); i++) {
+			if (student.get(i).getMark() >= 8) {
+				student.add(student.get(i));
+			}
+		}
+		return student;
 	}
 	
 }
