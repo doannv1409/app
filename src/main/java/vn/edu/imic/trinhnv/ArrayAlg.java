@@ -6,17 +6,17 @@ public class ArrayAlg <T>{
 
 	public void print(T[]a){
 		for (T t : a) {
-			System.out.print("%s" + t);
+			System.out.print(String.format("%s" , t));
 		}
 		System.out.println(" ");
 	}
 	
-	public static <T> void print(T[] a, int start, int end){
+	public void print(T[] a, int start, int end){
 		if (start >= end || start < 0 || end > a.length) {
 			throw new RuntimeException("Invalid start or end !");
 		}else {
 			for (int i = start; i < end; i++) {
-				System.out.print("%s" + a[i]);
+				System.out.print(String.format("%s" , a[i]));
 			}
 			System.out.println("Elements will be print: " +(end - start));
 		}
