@@ -8,17 +8,16 @@ public class LoginControllerImpl implements LoginController {
 	@Override
 	public void validate(UserDetail user) {
 		// TODO Auto-generated method stub
-		if(user.getUsername().isEmpty()){
+		if(user.getUsername().isEmpty() || user.getUsername() == null){
 			throw new UserNotFoundException("Empty username", "code1");
 		}
-		if (user.getPassword().isEmpty()) {
+		if (user.getPassword().isEmpty() || user.getPassword() == null) {
 			throw new UserNotFoundException("Empty password", "code2");
 		}
-		if ("imic".equals(user.getUsername()) && ("123456").equals(user.getPassword())) {
-			throw new UserNotFoundException("Login ok", "code3");
-		}else {
-			throw new UserNotFoundException("Invalid username or password", "code4");
+		if (!"imic".equals(user.getUsername()) && !"123456".equals(user.getPassword())) {
+			throw new UserNotFoundException("Invalid username or password", "code3");
 		}
+		System.out.println("Login ok");
 	}
 	
 }
