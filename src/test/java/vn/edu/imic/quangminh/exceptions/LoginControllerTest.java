@@ -1,12 +1,10 @@
 package vn.edu.imic.quangminh.exceptions;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 import org.junit.Before;
 import org.junit.Test;
-
-import vn.edu.imic.leanhtuan.exception.LoginControllerImpl;
-import vn.edu.imic.leanhtuan.exception.UsernameNotFoundException;
 
 public class LoginControllerTest {
 	
@@ -16,7 +14,7 @@ public class LoginControllerTest {
 	@Before
 	public void setUp() {
 		//Init implement class
-		controller = new LoginControllerImpl();
+		controller = null;
 		user = new UserDetail();
 	}
 	
