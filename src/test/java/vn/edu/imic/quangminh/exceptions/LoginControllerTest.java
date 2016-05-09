@@ -5,6 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+import vn.edu.imic.nguyenvanduc.LoginControllerImpl;
+
 public class LoginControllerTest {
 	
 	private LoginController controller;
@@ -13,13 +15,23 @@ public class LoginControllerTest {
 	@Before
 	public void setUp() {
 		//Init implement class
-		controller = null;
+		controller = new LoginControllerImpl();
 		user = new UserDetail();
 	}
 	
 	@Test
 	public void validate_emptyUsername() {
 		try {
+			controller.validate(user);
+			fail("Must throw exception");
+		} catch (Exception e) {
+			assertEquals("empty username", e.getMessage());
+		}
+	}
+	@Test
+	public void validate_emptyUsername_case2() {
+		try {
+			user.setUsername("");
 			controller.validate(user);
 			fail("Must throw exception");
 		} catch (Exception e) {
