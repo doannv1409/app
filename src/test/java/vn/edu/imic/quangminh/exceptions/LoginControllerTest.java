@@ -1,11 +1,10 @@
 package vn.edu.imic.quangminh.exceptions;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 import org.junit.Before;
 import org.junit.Test;
-
-import vn.edu.imic.nguyenvanduc.LoginControllerImpl;
 
 public class LoginControllerTest {
 	
@@ -15,7 +14,7 @@ public class LoginControllerTest {
 	@Before
 	public void setUp() {
 		//Init implement class
-		controller = new LoginControllerImpl();
+		controller = null;
 		user = new UserDetail();
 	}
 	
@@ -28,6 +27,7 @@ public class LoginControllerTest {
 			assertEquals("empty username", e.getMessage());
 		}
 	}
+	
 	@Test
 	public void validate_emptyUsername_case2() {
 		try {
