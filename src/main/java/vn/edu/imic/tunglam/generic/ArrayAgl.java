@@ -26,7 +26,7 @@ public class ArrayAgl<T> {
 
 	public Pair<T> maxTwo(T[] a) {
 		this.bubblesort(a);
-		Pair<T> b = new Pair<T>(a[a.length - 2], a[a.length - 1]);
+		Pair<T> b = new Pair<T>(a[a.length - 1], a[a.length - 2]);
 		return b;
 	}
 
