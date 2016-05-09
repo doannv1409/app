@@ -2,13 +2,18 @@ package vn.edu.imic.trinhnv;
 
 public class TestArrayAlg {
 	public static void main(String[] args) {
-		Integer[] arr = {11,32,100,43,56,28,56};
-		ArrayAlg<Integer[]> i = new ArrayAlg<Integer[]>(arr);
-		System.out.print("Array: ");
-		i.print(arr);
-		System.out.println("-------------");
-		ArrayAlg.<Integer>print(arr, 1, 5);
-		System.out.println("-------------");
-		i.maxTwo(arr);
+		ArrayAlg<Double> arrayAlg = new ArrayAlg<>();
+		Double[] doubleNumbers = new Double[]{-12.3, 24.6, 0.0, 1.0};
+		arrayAlg.print(doubleNumbers);
+		arrayAlg.print(doubleNumbers, 0, 2);
+		Pair<Double> maxTwo = arrayAlg.maxTwo(doubleNumbers);
+		System.out.println(maxTwo);
+		
+		ArrayAlg<String> arrayAlg2 = new ArrayAlg<>();
+		String[] strs = new String[]{"John", "Lam", "Nam"};
+		arrayAlg2.print(strs);
+		arrayAlg2.print(strs, 0, 2);
+		Pair<String> maxTwo2 = arrayAlg2.maxTwo(strs);
+		System.out.println(maxTwo2);
 	}
 }
