@@ -6,10 +6,6 @@ import static org.junit.Assert.fail;
 import org.junit.Before;
 import org.junit.Test;
 
-import vn.edu.imic.vumanh.LoginControllerImpl;
-
-
-
 
 public class LoginControllerTest {
 	
@@ -28,8 +24,8 @@ public class LoginControllerTest {
 		try {
 			controller.validate(user);
 			fail("Must throw exception");
-		} catch (Exception e) {
-			assertEquals("empty username", e.getMessage());
+		} catch (UserNotFoundException e) {
+			assertEquals(ErrorCodes.EMPTY_USERNAME.code(), e.getCode());
 		}
 	}
 	
@@ -39,8 +35,8 @@ public class LoginControllerTest {
 			user.setUsername("");
 			controller.validate(user);
 			fail("Must throw exception");
-		} catch (Exception e) {
-			assertEquals("empty username", e.getMessage());
+		} catch (UserNotFoundException e) {
+			assertEquals(ErrorCodes.EMPTY_USERNAME.code(), e.getCode());
 		}
 	}
 	
@@ -50,8 +46,8 @@ public class LoginControllerTest {
 			user.setUsername("username");
 			controller.validate(user);
 			fail("Must throw exception");
-		} catch (Exception e) {
-			assertEquals("empty password", e.getMessage());
+		} catch (UserNotFoundException e) {
+			assertEquals(ErrorCodes.EMPTY_PASSWORD.code(), e.getCode());
 		}
 	}
 	
@@ -62,8 +58,8 @@ public class LoginControllerTest {
 			user.setPassword("");
 			controller.validate(user);
 			fail("Must throw exception");
-		} catch (Exception e) {
-			assertEquals("empty password", e.getMessage());
+		} catch (UserNotFoundException e) {
+			assertEquals(ErrorCodes.EMPTY_PASSWORD.code(), e.getCode());
 		}
 	}
 	
@@ -74,8 +70,8 @@ public class LoginControllerTest {
 			user.setPassword("password");
 			controller.validate(user);
 			fail("Must throw exception");
-		} catch (Exception e) {
-			assertEquals("invalid username or password", e.getMessage());
+		} catch (UserNotFoundException e) {
+			assertEquals(ErrorCodes.INVALID_USER.code(), e.getCode());
 		}
 	}
 	
@@ -86,8 +82,8 @@ public class LoginControllerTest {
 			user.setPassword("password");
 			controller.validate(user);
 			fail("Must throw exception");
-		} catch (Exception e) {
-			assertEquals("invalid username or password", e.getMessage());
+		} catch (UserNotFoundException e) {
+			assertEquals(ErrorCodes.INVALID_USER.code(), e.getCode());
 		}
 	}
 	

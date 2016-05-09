@@ -45,5 +45,6 @@ public class ExceptionDemo {
 		} catch(RuntimeException e) {
 			System.out.println("Loi Runtime");
 		}
+		System.out.print(ErrorCodes.EMPTY_USERNAME.toString());
 	}
 }
