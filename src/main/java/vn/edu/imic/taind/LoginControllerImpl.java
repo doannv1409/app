@@ -12,7 +12,7 @@ public class LoginControllerImpl implements LoginController {
 			throw new UserNotFoundException("01", "empty username");
 		}
 		
-		if(user.getPassword() == null) {
+		if(user.getPassword() == null) { 
 			throw new UserNotFoundException("02", "empty password");
 		}
 		
