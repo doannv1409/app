@@ -7,6 +7,7 @@ public class LoginControllerImpl implements LoginController {
 
 	@Override
 	public void validate(UserDetail user) {
+		//TODO check empty
 		if (user.getUsername() == null) {
 			throw new UserNotFoundException("01", "empty username");
 		}

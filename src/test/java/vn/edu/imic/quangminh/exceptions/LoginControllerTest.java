@@ -6,6 +6,11 @@ import static org.junit.Assert.fail;
 import org.junit.Before;
 import org.junit.Test;
 
+import vn.edu.imic.vumanh.LoginControllerImpl;
+
+
+
+
 public class LoginControllerTest {
 	
 	private LoginController controller;
@@ -14,7 +19,7 @@ public class LoginControllerTest {
 	@Before
 	public void setUp() {
 		//Init implement class
-		controller = null;
+		controller = new LoginControllerImpl();
 		user = new UserDetail();
 	}
 	
@@ -43,6 +48,18 @@ public class LoginControllerTest {
 	public void validate_emptyPassword() {
 		try {
 			user.setUsername("username");
+			controller.validate(user);
+			fail("Must throw exception");
+		} catch (Exception e) {
+			assertEquals("empty password", e.getMessage());
+		}
+	}
+	
+	@Test
+	public void validate_emptyPassword_case2() {
+		try {
+			user.setUsername("username");
+			user.setPassword("");
 			controller.validate(user);
 			fail("Must throw exception");
 		} catch (Exception e) {

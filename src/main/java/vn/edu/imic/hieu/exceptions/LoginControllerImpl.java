@@ -7,6 +7,7 @@ public class LoginControllerImpl implements LoginController{
 
 	@Override
 	public void validate(UserDetail user) throws UserNotFoundException {
+		//Check empty
 		if (user.getUsername() == null) throw new UserNotFoundException("username","empty username");
 		if (user.getPassword() == null) throw new UserNotFoundException("password", "empty password");
 		if (!user.getUsername().equals("imic")|| !user.getPassword().equals("123456"))

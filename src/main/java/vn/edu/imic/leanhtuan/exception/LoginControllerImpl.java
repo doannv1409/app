@@ -17,6 +17,7 @@ public class LoginControllerImpl implements LoginController{
 			throw new UsernameNotFoundException("empty username", "username");
 		}
 		
+		//TODO check empty
 		if(user.getPassword() == null){
 			throw new UsernameNotFoundException("empty password", "password");
 		}
