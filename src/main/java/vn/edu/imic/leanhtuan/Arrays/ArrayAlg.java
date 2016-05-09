@@ -1,5 +1,7 @@
 package vn.edu.imic.leanhtuan.Arrays;
 
+import java.util.Arrays;
+
 public class ArrayAlg<T> {
 	protected T start;
 	protected T end;
@@ -17,28 +19,30 @@ public class ArrayAlg<T> {
 	}
 
 	public static <T> void print(T[] a) {
-		for(T i : a){
-		System.out.println(i);
+		for (T element : a) {
+			System.out.println(element);
 		}
+
+		System.out.println();
 	}
 
 	public void print(T[] a, int start, int end){
-		int i;
-		if(start < end) {
-		for(i = start; i < end; i++){
-			System.out.println(a);
-			}
-		
-		System.out.println(i);
-		
-		}else{
-			
-		}
+		if(start >= end || start < 0 || end > a.length){
 		throw new RuntimeException("Gia Tri Bat Dau Va Ket Thuc Khong Hop Le");
-	}
-	
-	public void maxTwo(T[] a){
-			
+			}
+		for(int i = start; i < end ; i++){
+			System.out.println(" :" + a[i]);
+		}
+		System.out.println("So phan tu duoc in ra la : " + a.length);
+		}
+
+	public Pair<T> maxTwo(T[] a) {
+		Pair<T> result = new Pair<>();
+		Arrays.sort(a);
+		result.setFirst(a[a.length -1]);
+		result.setSecond(a[a.length -2]);
+		return result;
+		
 	}
 
 }
