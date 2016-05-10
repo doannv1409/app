@@ -7,16 +7,23 @@ public class IplmLoginController implements LoginController {
 
 	@Override
 	public void validate(UserDetail user) {
-		if (user.getUsername().isEmpty()) {
-			throw new UserNotFoundException("empty username", "c1");
+		String username = user.getUsername();
+		String password = user.getPassword();
+
+		if (username == null || username.isEmpty()) {
+			ErrorCodes err = ErrorCodes.EMPTY_USERNAME;
+			throw new UserNotFoundException(err.message(), err.code());
 		}
-		if (user.getPassword().isEmpty()) {
-			throw new UserNotFoundException("empty password", "c2");
+
+		if (password == null || password.isEmpty()) {
+			ErrorCodes err = ErrorCodes.EMPTY_PASSWORD;
+			throw new UserNotFoundException(err.message(), err.code());
 		}
-		if (("imic").equals(user.getUsername())&& ("123456").equals(user.getPassword())){
-			System.out.println("login ok");
-		} else {
-			throw new UserNotFoundException("Invalid username or passwork", "c3");
+
+		if (!"imic".equals(username) || !"123456".equals(password)) {
+			ErrorCodes err = ErrorCodes.INVALID_USER;
+			throw new UserNotFoundException(err.message(), err.code());
 		}
+
 	}
 }
