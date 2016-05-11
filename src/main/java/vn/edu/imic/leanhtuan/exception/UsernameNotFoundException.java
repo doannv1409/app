@@ -1,6 +1,11 @@
 package vn.edu.imic.leanhtuan.exception;
 
 public class UsernameNotFoundException extends RuntimeException{
+		/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5895086142426965560L;
+
 		public String getCode() {
 		return code;
 	}
