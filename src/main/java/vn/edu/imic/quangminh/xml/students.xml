@@ -1,0 +1,14 @@
+<Imic>
+	<Student rollNum="001">
+		<name>Nguyen Van A</name>
+		<mark>10</mark>
+	</Student>
+	<Student rollNum="002">
+		<name>Nguyen Van B</name>
+		<mark>9</mark>
+	</Student>
+	<Student rollNum="003">
+		<name>Nguyen Van C</name>
+		<mark>8.3</mark>
+	</Student>
+</Imic>
